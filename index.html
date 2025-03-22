@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atelier de l&#039;Endurance</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_trans.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<div>
+    <div class="min-h-screen bg-cover bg-center h-full" style="
+    background-image: url('https://runninglife.com.mx/wp-content/uploads/2019/12/TRAIL1-scaled.jpg');
+">
+        <section class="relative w-full pl-4 pr-8 body-font sm:px-8" data-tails-scripts="//unpkg.com/alpinejs">
+            <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
+                <div
+                    class="relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
+                    <div class="flex items-center justify-end w-auto sm:w-1/4 h-full">
+                        <a href="/" class="flex items-center text-lg space-x-2 font-extrabold text-black">
+                            <img src="assets/img/logo_trans.png" alt="Logo" class="size-24 sm:mr-2" />
+                            <span class="hidden sm:inline">Atelier de l'Endurance</span>
+                        </a>
+                    </div>
+                    <div class="top-0 left-0 items-start w-full h-full p-4 bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute md:bg-transparent justify-between md:p-0 md:relative md:flex hidden"
+                        :class="{ 'flex fixed': showMenu, 'hidden': !showMenu }">
+                        <div
+                            class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+                            <a href="/"
+                                class="inline-flex items-center block w-auto h-16 px-4 text-xl font-black leading-none text-gray-900 md:hidden">
+                                <img src="assets/img/logo_trans.png" alt="Logo" class="size-16 mr-2" />
+                                Atelier de l'Endurance
+                            </a>
+                            <div
+                                class="flex flex-col items-start justify-center w-full space-x-6 text-center pb-2 text-xl lg:space-x-8 md:w-2/3 font-semibold md:mt-0 md:flex-row md:items-center">
+                                <a href="/"
+                                    class="inline-block py-2 mx-0 ml-6 text-left text-black md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-black after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
+                                    Accueil
+                                </a>
+                                <a href="/coaching/coaching.html"
+                                    class="inline-block py-2 mx-0 ml-6 text-left text-white hover:text-black md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-black after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
+                                    Coaching
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div @click="showMenu = !showMenu"
+                        class="absolute right-0 flex flex-col items-center items-end justify-center rounded-full cursor-pointer md:hidden">
+                        <svg class="w-8 h-8 text-black" x-show="!showMenu" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="w-8 h-8 text-black" x-show="showMenu" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: none">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="px-2 md:px-0 relative flex flex-col items-center justify-center min-h-[calc(100vh-96px)]">
+            <div class="container max-w-6xl px-5 mx-auto space-y-6 text-center relative z-10">
+                <h1 class="text-4xl font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl">
+                    <span class="tails-selected-element&quot;">Ton
+                        <span class="mt-1 text-blue-600 lg:inline lg:mt-0" data-primary="blue-600">succès</span>, notre
+                        mission</span>
+                </h1>
+                <p class="w-full mx-auto font-bold text-blue-600 md:max-w-md text-2xl md:max-w-3xl">
+                    Route, Trail, Cyclisme
+                </p>
+            </div>
+        </section>
+    </div>
+    <section class="px-2 py-12 lg:pt-20 bg-white md:px-0">
+        <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+            <div class="flex flex-col-reverse md:flex-row flex-wrap items-center sm:-mx-3">
+                <div class="w-full md:w-1/2 md:px-5">
+                    <div
+                        class="w-full pb-6 space-y-6 max-w-sm sm:max-w-md lg:max-w-xl lg:space-y-8 xl:space-y-9 md:pr-0 md:pb-0 justify-self-center">
+                        <h1
+                            class="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-5xl xl:text-6xl text-center md:text-left">
+                            <span class="">Qui sommes</span>
+                            <span class="text-blue-600" data-primary="indigo-600">nous ?</span>
+                        </h1>
+                        <div class="flex flex-col space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-9 text-justify">
+                            <p class="lg:text-lg md:max-w-3xl">
+                                Nous sommes David et Anthony, deux frères
+                                passionnés des sports d'endurance.
+                            </p>
+                            <p class="lg:text-lg md:max-w-3xl">
+                                L’un évolue en cyclisme de haut niveau,
+                                tandis que l’autre se distingue en trail au
+                                niveau amateur/élite. Notre parcours sportif
+                                nous a naturellement conduits à nous
+                                intéresser en profondeur à l’entraînement et
+                                à la physiologie de l’effort.
+                            </p>
+                            <p class="lg:text-lg md:max-w-3xl">
+                                Nous avons créé l'<b class="">Atelier de l’Endurance</b>
+                                avec l’envie de partager notre expérience et
+                                d’accompagner tous les passionnés de sport
+                                d’endurance, qu’ils soient débutants ou
+                                confirmés. Notre objectif est d’aider chacun
+                                à progresser, à se dépasser et à prendre du
+                                plaisir dans sa pratique, en proposant un
+                                accompagnement adapté à tous les niveaux et
+                                toutes les ambitions.
+                            </p>
+                            <p class="flex justify-end text-base text-gray-500 lg:text-lg md:max-w-3xl">
+                                David et Anthony
+                            </p>
+                        </div>
+                        <div class="relative flex flex-row sm:space-x-4">
+                            <a href="/coaching"
+                                class="flex border-2 border-blue-600 items-center px-6 py-3 text-lg text-blue-600 bg-white rounded-full hover:bg-blue-600 hover:text-white w-auto"
+                                data-primary="indigo-600" data-rounded="rounded-md">
+                                En savoir plus
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" class=""></line>
+                                    <polyline points="12 5 19 12 12 19" class=""></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                    <div class="flex w-full h-full overflow-hidden justify-center sm:px-2 lg:px-8">
+                        <img src="https://cdn.devdojo.com/tails/images/EkgmgY9Pca9ZQgrsm5TKu9VHoZF9OxxDhvN8RH0d.png"
+                            class="rounded-xl max-h-96 md:max-h-none" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-white py-12">
+        <div
+            class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-zinc-300 border-solid justify-center md:flex-row max-w-7xl lg:px-16">
+            <!-- Image -->
+            <div
+                class="box-border relative w-full max-w-md mt-5 mb-4 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 lg:mb-0 md:w-1/2 order-first md:order-none">
+                <img src="https://cdn.devdojo.com/tails/images/kKWxvRtRhZ9VGcO5arrGyaJHyfuarFUrF3yt9jZz.jpg"
+                    class="lg:size-96 rounded-xl" />
+            </div>
+            <!-- Content -->
+            <div class="box-border w-full text-black text-justify sm:w-md md:w-1/2 sm:pl-10 lg:pl-2">
+                <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-zinc-300 lg:text-3xl md:text-2xl">
+                    David Dieperink
+                </h2>
+                <p class="pt-4 pb-4 m-0 text-zinc-700 lg:text-lg">
+                    Ancien fumeur et fêtard, j’ai pris un tournant décisif
+                    en 2021 en me reprenant en main, avec une perte de poids
+                    comme premier objectif. Poussé par mon frère, j’ai tenté
+                    mon premier 10 km… et j'ai détesté la course à pied !
+                    C’est alors que je me suis tourné vers les sports de
+                    combat, que j’ai pratiqués jusqu’en 2023.
+                </p>
+                <p class="pb-4 m-0 text-zinc-700 lg:text-lg">
+                    Mais mon cardio restait un frein, et une nouvelle fois,
+                    mon frère m’a embarqué dans sa passion : le vélo. De fil
+                    en aiguille, j’ai commencé à rouler, puis à courir, et
+                    sans même m’en rendre compte, je me suis lancé des défis
+                    toujours plus grands : courir mon premier marathon,
+                    terminer un trail de 70 km…
+                </p>
+                <p class="pb-4 m-0 text-zinc-700 lg:text-lg">
+                    Aujourd’hui, je suis tombé amoureux des sports
+                    d’endurance. La physiologie et l’entraînement me
+                    passionnent, et cette soif de progression m’a donné
+                    envie d’aider les autres à atteindre leurs propres
+                    objectifs.
+                </p>
+            </div>
+            <!-- End Content -->
+        </div>
+        <div
+            class="box-border flex flex-col items-center content-center px-8 mx-auto text-black border-0 border-zinc-300 border-solid justify-center md:flex-row max-w-7xl lg:px-16">
+            <!-- Content -->
+            <div class="box-border w-full text-black text-justify border-solid md:w-1/2 sm:pr-10 lg:pr-2">
+                <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-zinc-300 lg:text-2xl md:text-2xl">
+                    Anthony Dieperink
+                </h2>
+                <p class="pt-4 pb-4 m-0 text-zinc-700 lg:text-lg">
+                    Ancien fumeur et fêtard, j’ai pris un tournant décisif
+                    en 2021 en me reprenant en main, avec une perte de poids
+                    comme premier objectif. Poussé par mon frère, j’ai tenté
+                    mon premier 10 km… et j'ai détesté la course à pied !
+                    C’est alors que je me suis tourné vers les sports de
+                    combat, que j’ai pratiqués jusqu’en 2023.
+                </p>
+                <p class="pb-4 m-0 text-zinc-700 border-0 border-zinc-300 lg:text-lg">
+                    Mais mon cardio restait un frein, et une nouvelle fois,
+                    mon frère m’a embarqué dans sa passion : le vélo. De fil
+                    en aiguille, j’ai commencé à rouler, puis à courir, et
+                    sans même m’en rendre compte, je me suis lancé des défis
+                    toujours plus grands : courir mon premier marathon,
+                    terminer un trail de 70 km…
+                </p>
+                <p class="pb-4 m-0 text-zinc-700 border-0 border-zinc-300 lg:text-lg">
+                    Aujourd’hui, je suis tombé amoureux des sports
+                    d’endurance. La physiologie et l’entraînement me
+                    passionnent, et cette soif de progression m’a donné
+                    envie d’aider les autres à atteindre leurs propres
+                    objectifs.
+                </p>
+            </div>
+            <!-- End Content -->
+            <!-- Image -->
+            <div
+                class="box-border relative w-full max-w-md mt-5 mb-4 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 lg:mb-0 md:w-1/2 xl:justify-end order-first md:order-none">
+                <img src="https://cdn.devdojo.com/tails/images/0yCqquILadutI3ec3xg5mbb2tN7UQ4sONmLcbkJV.jpg"
+                    class="lg:size-96 rounded-xl justify-self-end" />
+            </div>
+        </div>
+    </section>
+    <section class="text-zinc-700 bg-white body-font border-t border-zinc-400">
+        <div class="container flex flex-col items-center px-8 py-4 mx-auto max-w-7xl sm:flex-row">
+            <a href="/" class="flex items-center text-lg space-x-2 font-extrabold text-gray-900 md:py-0">
+                <img src="https://cdn.devdojo.com/tails/images/0MLcFAqWoYLNn3A95R8euXxFxsF6JViDd4WIqpGX.png" alt="Logo"
+                    class="size-20 mr-2" /></a>
+            <p class="mt-4 text-sm text-center text-zinc-500 sm:pl-4 sm:border-l sm:border-zinc-300 sm:mt-0">
+                © 2025 Atelier de l'Endurance, Tous droits réservés.
+            </p>
+            <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+                <a href="https://www.instagram.com/atelier_endurance/" class="text-zinc-500 hover:text-zinc-600">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" class=""></path>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </section>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    </body>
+
+</html>

@@ -1,1 +1,1 @@
-# atelier-endurance
+# Atelier de l'Endurance
