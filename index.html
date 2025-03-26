@@ -7,6 +7,7 @@
     <title>Atelier de l&#039;Endurance</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_trans.png" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -18,11 +19,11 @@
 </head>
 
 <div>
-    <div class="min-h-screen bg-cover bg-center h-full" style="
+    <div class="min-h-screen bg-cover bg-center md:bg-top" style="
     background-image: url('https://runninglife.com.mx/wp-content/uploads/2019/12/TRAIL1-scaled.jpg');
 ">
         <section class="relative w-full pl-4 pr-8 body-font sm:px-8" data-tails-scripts="//unpkg.com/alpinejs">
-            <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
+            <!-- <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
                 <div
                     class="relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
                     <div class="flex items-center justify-end w-auto sm:w-1/4 h-full">
@@ -64,6 +65,43 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
+                    </div>
+                </div>
+            </nav> -->
+
+            <nav class="fixed bg-white w-full z-20 top-0 start-0">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
+                    <a href="/" class="flex items-center space-x-3">
+                        <img src="assets/img/logo_trans.png" class="h-24" alt="Logo">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0">
+                        <button type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center">Nous
+                            contacter</button>
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+                            <li>
+                                <a href="/"
+                                    class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+                                    aria-current="page">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="coaching/coaching.html"
+                                    class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Coaching</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -253,6 +291,8 @@
     </section>
 
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
     </body>
 
 </html>
