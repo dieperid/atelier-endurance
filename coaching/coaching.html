@@ -52,7 +52,7 @@
                     <h2 class="text-3xl font-semibold leading-tight tracking-tight text-black sm:text-4xl md:text-5xl">
                         NOS FORMULES
                     </h2>
-                    <p class="mt-2 text-black text-md text-center sm:text-xl sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
+                    <p class="mt-2 text-black mx-auto text-md text-center sm:text-xl sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
                         Que tu sois débutant, en quête d’une progression régulière ou à la recherche de performance, nos formules de coaching en ligne s’adaptent à ton niveau et à tes objectifs, que ce soit en course à pied, en trail ou à vélo. Bénéficie d’un suivi personnalisé, d’un plan d’entraînement 100 % sur mesure et d’un accompagnement via Intervals.icu pour suivre ta progression en toute simplicité.
                     </p>
                 </div>
@@ -64,7 +64,7 @@
                         </h3>
                         <div class="flex items-end mt-6 leading-7 text-zinc-900">
                             <p class="m-0 text-4xl md:text-5xl font-semibold">
-                                70 CHF
+                                79 CHF
                             </p>
                             <p>/ mois</p>
                         </div>
@@ -152,7 +152,7 @@
                         </h3>
                         <div class="flex items-end mt-6 leading-7 text-zinc-900">
                             <p class="m-0 text-4xl md:text-5xl font-semibold">
-                                109 CHF
+                                119 CHF
                             </p>
                             <p>/ mois</p>
                         </div>
@@ -265,14 +265,18 @@
                 </div>
                 <div class="flex flex-col justify-self-center md:flex-row gap-4 mt-8 md:mt-12">
                     <div class="bg-white max-w-xs md:min-w-xs lg:max-w-md border border-gray-300 rounded-lg shadow-md">
-                        <img class="w-full h-96 object-cover object-top rounded-t-lg" src="../assets/img/Sacha.jpeg" alt="" />
+                        <img class="w-full h-96 object-cover object-top rounded-t-lg" src="../assets/img/Sacha.jpeg" alt="Sacha" />
                         <div class="p-5">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Sacha Christen</h5>
                             <div x-data="{ expanded: false }" class="relative">
-                                <p class="text-md md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
-                                    Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et de ses conseils techniques, c'est son soutien et sa disponibilité qui font toute la différence.
-                                    <br> Ses séances sont à la fois exigeantes et plaisantes, de plus, il reste toujours à mon écoute pour que le plaisir soit toujours présent !
-                                </p>
+                                <div class="text-sm md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
+                                    <p>
+                                        Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et de ses conseils techniques, c'est son soutien et sa disponibilité qui font toute la différence.
+                                    </p>
+                                    <p>
+                                        Ses séances sont à la fois exigeantes et plaisantes, de plus, il reste toujours à mon écoute pour que le plaisir soit toujours présent !
+                                    </p>
+                                </div>
                                 <button @click="expanded = !expanded" class="text-blue-500 mt-2">
                                 <span x-show="!expanded">Voir plus</span>
                                 <span x-show="expanded">Voir moins</span>
@@ -281,13 +285,19 @@
                         </div>
                     </div>
                     <div class="bg-white max-w-xs md:min-w-xs lg:max-w-md border border-gray-300 rounded-lg shadow-md">
-                        <img class="w-full h-96 object-cover rounded-t-lg" src="../assets/img/Jeremie.jpeg" alt="" />
+                        <img class="w-full h-96 object-cover rounded-t-lg" src="../assets/img/Jeremie.jpeg" alt="Jérémie" />
                         <div class="p-5">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Jérémie Boillat</h5>
                             <div x-data="{ expanded: false }" class="relative">
-                                <p class="text-md md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
-                                    Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et j’avais tendance à me décourager facilement, faute de discipline et de cadre. Puis, j’ai découvert l’Atelier de l’Endurance et j’ai vu en cette initiative une belle opportunité pour m’engager plus sérieusement dans ma pratique, d’autant plus que je connaissais déjà David, ce qui m’a tout de suite mis en confiance.<br><br> Depuis que j’ai intégré l’atelier il y a quelques semaines, j’ai ressenti un véritable changement : je suis plus discipliné, plus régulier et surtout plus motivé que jamais. Même s’il est encore trop tôt pour observer des résultats flagrants sur mes performances, je sens déjà une nette amélioration dans mon état d’esprit et ma rigueur. Je suis convaincu que cette dynamique positive me permettra d’atteindre de nouveaux objectifs avec confiance et détermination.
-                                </p>
+                                <div class="text-sm md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
+                                    <p>
+                                        Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et j’avais tendance à me décourager facilement, faute de discipline et de cadre. Puis, j’ai découvert l’Atelier de l’Endurance et j’ai vu en cette initiative une belle opportunité pour m’engager plus sérieusement dans ma pratique, d’autant plus que je connaissais déjà David, ce qui m’a tout de suite mis en confiance. 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Depuis que j’ai intégré l’atelier il y a quelques semaines, j’ai ressenti un véritable changement : je suis plus discipliné, plus régulier et surtout plus motivé que jamais. Même s’il est encore trop tôt pour observer des résultats flagrants sur mes performances, je sens déjà une nette amélioration dans mon état d’esprit et ma rigueur. Je suis convaincu que cette dynamique positive me permettra d’atteindre de nouveaux objectifs avec confiance et détermination.
+                                    </p>
+                                </div>
                                 <button @click="expanded = !expanded" class="text-blue-500 mt-2">
                                 <span x-show="!expanded">Voir plus</span>
                                 <span x-show="expanded">Voir moins</span>
