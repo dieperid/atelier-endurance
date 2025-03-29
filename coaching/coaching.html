@@ -1,326 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Atelier de l&#039;Endurance</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo_trans.png" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-        body {
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Atelier de l&#039;Endurance</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo_trans.png" />
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+            body {
             font-family: 'Montserrat';
-        }
-    </style>
-</head>
-
-<body class="font-sans">
-    <section class="container mx-auto w-full sm:px-0" data-tails-scripts="//unpkg.com/alpinejs">
-        <nav class="w-full z-20 top-0 start-0 text-md md:text-lg">
-            <div class="max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4">
-                <a href="/" class="flex items-center space-x-3">
+            }
+        </style>
+    </head>
+    <body class="font-sans">
+        <section class="container mx-auto w-full sm:px-0">
+            <nav class="w-full z-20 top-0 start-0 text-md md:text-lg">
+                <div class="max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4">
+                    <a href="/" class="flex items-center space-x-3">
                     <img src="../assets/img/logo_trans.png" class="h-28" alt="Logo">
-                </a>
-                <div class="flex md:order-2 space-x-3 md:space-x-0">
-                    <a href="https://forms.gle/Cbntq22EH7GRkSKW6" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0">
+                        <a href="https://forms.gle/Cbntq22EH7GRkSKW6" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center">
                         Nous contacter
-                    </a>
-                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-md text-black rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-black" aria-controls="navbar-sticky" aria-expanded="false">
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
+                        </a>
+                        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-md text-black rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-black" aria-controls="navbar-sticky" aria-expanded="false">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                        <ul class="flex flex-col text-black md:space-x-8 space-y-4 md:space-y-0 md:flex-row md:mt-0 md:border-0">
+                            <li class="text-center">
+                                <a href="/" class="py-1 md:py-2 px-3 md:p-0 border-b-3 border-transparent hover:border-black transition-all duration-200">Accueil</a>
+                            </li>
+                            <li class="text-center">
+                                <a href="/coaching/coaching.html" class="py-1 md:py-2 px-3 md:bg-transparent md:p-0 border-b-3">Coaching</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="py-8 lg:py-12 xl:py-16 text-zinc-900">
+            <div class="container px-8 mx-auto border-solid sm:px-16">
+                <div class="flex flex-col justify-center text-center">
+                    <h2 class="text-3xl font-semibold leading-tight tracking-tight text-black sm:text-4xl md:text-5xl">
+                        NOS FORMULES
+                    </h2>
+                    <p class="mt-2 text-black text-md text-center sm:text-xl sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
+                        Que tu sois débutant, en quête d’une progression régulière ou à la recherche de performance, nos formules de coaching en ligne s’adaptent à ton niveau et à tes objectifs, que ce soit en course à pied, en trail ou à vélo. Bénéficie d’un suivi personnalisé, d’un plan d’entraînement 100 % sur mesure et d’un accompagnement via Intervals.icu pour suivre ta progression en toute simplicité.
+                    </p>
+                </div>
+                <div class="flex flex-col mt-4 text-zinc-900 justify-self-center gap-4 sm:mt-6 md:mt-8 md:flex-row">
+                    <!-- Price 1 -->
+                    <div class="relative z-10 flex flex-col items-center max-w-xs md:min-w-xs lg:max-w-md p-4 border border-gray-300 shadow-sm rounded-lg sm:p-6 md:mt-8 md:p-8 lg:max-w-md">
+                        <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black sm:text-3xl md:text-4xl">
+                            Régulier
+                        </h3>
+                        <div class="flex items-end mt-6 leading-7 text-zinc-900">
+                            <p class="m-0 text-4xl md:text-5xl font-semibold">
+                                70 CHF
+                            </p>
+                            <p>/ mois</p>
+                        </div>
+                        <p class="mt-6 mb-5 text-md md:text-base text-zinc-900">Un suivi personnalisé avec des ajustements hebdomadaires, des analyses de tes séances chaque semaine et un bilan mensuel en visio. Idéal pour ceux qui veulent progresser efficacement avec un accompagnement régulier et adapté à leur rythme.
+                        </p>
+                        <ul class="flex-1 p-0 mt-4 text-sm lg:text-base text-zinc-900">
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Suivi par un coach spécialisé
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Évaluation initialie de 45 minutes*
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Plan 100% personnalisé
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Accessible via Intervals.icu
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Échange quotidien (Appel, WA, etc.)
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Adaptation du plan à la semaine
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                1 bilan mensuel en visio (30min)
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Analyse des séances hebdomadaire
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Plan nutritionnel pour ta course (en extra)
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Plan musculation (en extra)
+                            </li>
+                        </ul>
+                        <a href="https://forms.gle/jyZWSaiUpJ1buZpw8" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg" data-primary="blue-600" data-rounded="rounded-md"> Choisir cette formule
+                        </a>
+                    </div>
+                    <!-- Price 2 -->
+                    <div class="relative z-10 flex flex-col items-center max-w-xs md:min-w-xs lg:max-w-md p-4 border border-gray-300 shadow-sm rounded-lg sm:p-6 md:mt-8 md:p-8 lg:max-w-md">
+                        <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black sm:text-3xl md:text-4xl">
+                            Performance
+                        </h3>
+                        <div class="flex items-end mt-6 leading-7 text-zinc-900">
+                            <p class="m-0 text-4xl md:text-5xl font-semibold">
+                                109 CHF
+                            </p>
+                            <p>/ mois</p>
+                        </div>
+                        <p class="mt-6 mb-5 text-md md:text-base text-zinc-900">Un suivi ultra-précis avec une adaptation quotidienne de ton programme, des analyses détaillées de chaque séance et 1 bilan hebdomadaire en visio. Parfait pour ceux qui cherchent à maximiser leur performance avec un accompagnement réactif et de haut niveau.</p>
+                        <ul class="flex-1 text-sm lg:text-base p-0 mt-4 text-zinc-900">
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Suivi par un coach spécialisé
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Évaluation initialie de 45 minutes*
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Plan 100% personnalisé
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Accessible via Intervals.icu
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Échanges quotidien (Appel, WA, etc.)
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Adaptation du plan au jour le jour
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                1 bilan hebdomadaire en visio (30min)
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Analyse des séances journalière
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Plan nutritionnel pour ta course (en extra)
+                            </li>
+                            <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
+                                <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Plan musculation (en extra)
+                            </li>
+                        </ul>
+                        <a href="https://forms.gle/jyZWSaiUpJ1buZpw8" target="_blank" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg" data-primary="blue-600" data-rounded="rounded-md"> Choisir cette formule
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center text-center text-zinc-900 mt-4 md:mt-6">
+                    <p class="text-sm sm:text-base sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
+                        *Le tarif mensuel n'inclut pas l'évaluation initiale, facturée au prix de 50.- CHF.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="w-full h-auto">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 43.9999C106.667 43.9999 213.333 7.99994 320 7.99994C426.667 7.99994 533.333 43.9999 640 43.9999C746.667 43.9999 853.333 7.99994 960 7.99994C1066.67 7.99994 1173.33 43.9999 1280 43.9999C1386.67 43.9999 1440 19.0266 1440 9.01329V100H0V43.9999Z"
+                    class="fill-current text-gray-300"></path>
+            </svg>
+        </div>
+        <section class="bg-gray-300 pb-8 lg:pb-12 xl:pb-16">
+            <div class="container mx-auto px-10 lg:px-16">
+                <p class="text-center relative flex w-full text-md sm:text-lg font-bold tracking-wider text-blue-600 uppercase justify-center">
+                    Ne nous croyez pas sur parole
+                </p>
+                <div class="sm:px-12 flex flex-col w-full justify-center md:px-0">
+                    <h2 class="relative flex items-start mt-2 text-3xl md:text-5xl font-bold justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute right-16 hidden w-12 h-12 -mt-2 -mr-16 text-gray-500 lg:inline-block" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
                         </svg>
-                    </button>
+                        Témoignages
+                    </h2>
+                    <div class="px-8 h-0.5 mt-4 md:mt-6 bg-gray-500 rounded-full"></div>
                 </div>
-                <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul class="flex flex-col text-black md:space-x-8 space-y-4 md:space-y-0 md:flex-row md:mt-0 md:border-0">
-                        <li class="text-center">
-                            <a href="/" class="py-1 md:py-2 px-3 md:p-0 border-b-3 border-transparent hover:border-black transition-all duration-200">Accueil</a>
-                        </li>
-                        <li class="text-center">
-                            <a href="/coaching/coaching.html" class="py-1 md:py-2 px-3 md:bg-transparent md:p-0 border-b-3">Coaching</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <section class=" py-8 lg:py-12 xl:py-16 text-zinc-900">
-        <div class="container px-8 mx-auto border-solid sm:px-16">
-            <div class="flex flex-col items-center text-center text-zinc-900 border-0 border-zinc-200">
-                <h2 class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-5xl">
-                    NOS FORMULES</h2>
-                <p class="box-border mt-2 text-black border-solid text-md text-center sm:text-xl sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
-                    Que tu sois débutant, en quête de progression régulière ou visant la performance maximale, nos formules de coaching en ligne sont conçues pour s’ajuster à ton niveau et tes objectifs. Bénéficie d’un suivi personnalisé, d’un plan d’entraînement 100% sur mesure, et d’un accompagnement via Intervals.icu pour suivre ta progression en toute simplicité.</p>
-            </div>
-            <div class="flex flex-col mt-4 text-zinc-900 justify-self-center gap-4 sm:mt-6 md:mt-8 md:flex-row">
-                <!-- Price 1 -->
-                <div class="relative z-10 flex flex-col items-center max-w-xs md:min-w-xs lg:max-w-md p-4 border border-gray-300 shadow-sm rounded-lg sm:p-6 md:mt-8 md:p-8 lg:max-w-md">
-                    <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black sm:text-3xl md:text-4xl">
-                        Régulier</h3>
-                    <div class="flex items-end mt-6 leading-7 text-zinc-900">
-                        <p class="m-0 text-4xl md:text-5xl font-semibold">
-                            70 CHF
-                        </p>
-                        <p>/ mois</p>
-                    </div>
-                    <p class="mt-6 mb-5 text-md md:text-base text-zinc-900">Un suivi personnalisé avec des ajustements hebdomadaires, des analyses de tes séances chaque semaine et un bilan mensuel en visio. Idéal pour ceux qui veulent progresser efficacement avec un accompagnement régulier et adapté à leur rythme.
-                    </p>
-                    <ul class="flex-1 p-0 mt-4 text-sm lg:text-base text-zinc-900">
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Suivi par un coach spécialisé
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Évaluation initialie de 45 minutes
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Plan 100% personnalisé
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Accessible via Intervals.icu
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Échange quotidien (Appel, WA, etc.)
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Adaptation du plan à la semaine
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> 1 bilan mensuel en visio (30min)
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Analyse des séances hebdomadaire
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Plan musculation (en extra)
-                        </li>
-                    </ul>
-                    <a href="https://forms.gle/jyZWSaiUpJ1buZpw8" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg" data-primary="blue-600" data-rounded="rounded-md"> Choisir cette formule
-                    </a>
-                </div>
-                <!-- Price 2 -->
-                <div class="relative z-10 flex flex-col items-center max-w-xs md:min-w-xs lg:max-w-md p-4 border border-gray-300 shadow-sm rounded-lg sm:p-6 md:mt-8 md:p-8 lg:max-w-md">
-                    <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black sm:text-3xl md:text-4xl">
-                        Performance</h3>
-                    <div class="flex items-end mt-6 leading-7 text-zinc-900">
-                        <p class="m-0 text-4xl md:text-5xl font-semibold">
-                            109 CHF
-                        </p>
-                        <p>/ mois</p>
-                    </div>
-                    <p class="mt-6 mb-5 text-md md:text-base text-zinc-900">Un suivi ultra-précis avec une adaptation quotidienne de ton programme, des analyses détaillées de chaque séance et 2 bilans mensuels en visio. Parfait pour ceux qui cherchent à maximiser leur performance avec un accompagnement réactif et de haut niveau.</p>
-                    <ul class="flex-1 text-sm lg:text-base p-0 mt-4 text-zinc-900">
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Suivi par un coach spécialisé
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Évaluation initialie de 45 minutes
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Plan 100% personnalisé
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Accessible via Intervals.icu
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Échanges quotidien (Appel, WA, etc.)
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Adaptation du plan au jour le jour
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> 2 bilans mensuels en visio (30min)
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Analyse des séances journalière
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Plan nutritionnel pour ta course (en extra)
-                        </li>
-                        <li class="flex flex-row items-center block w-full mb-2 font-semibold text-left">
-                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6" data-primary="blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg> Plan musculation (en extra)
-                        </li>
-                    </ul>
-                    <a href="https://forms.gle/jyZWSaiUpJ1buZpw8" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg" data-primary="blue-600" data-rounded="rounded-md"> Choisir cette formule
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-8 lg:py-12 xl:py-16">
-        <div class="container mx-auto px-10 lg:px-16">
-            <p class="text-center relative flex w-full text-md sm:text-lg font-bold tracking-wider text-blue-600 uppercase justify-center">
-                Ne nous croyez pas sur parole</p>
-            <div class="sm:px-12 flex flex-col w-full justify-center md:px-0">
-                <h2 class="relative flex items-start mt-2 text-3xl md:text-5xl font-bold justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute right-16 hidden w-12 h-12 -mt-2 -mr-16 text-zinc-200 lg:inline-block" viewBox="0 0 975.036 975.036">
-                        <path
-                            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                        </path>
-                    </svg> Témoignages
-                </h2>
-                <div class="px-8 h-0.5 mt-4 md:mt-6 bg-blue-100 rounded-full"></div>
-            </div>
-            <div class="flex flex-col justify-self-center md:flex-row gap-4 mt-8 md:mt-12">
-                <div class="max-w-xs md:min-w-xs lg:max-w-md border border-gray-200 rounded-lg shadow-sm">
-                    <img class="w-full h-96 object-cover object-top rounded-t-lg" src="../assets/img/Sacha.jpeg" alt="" />
-                    <div class="p-5">
-                        <a href="#">
+                <div class="flex flex-col justify-self-center md:flex-row gap-4 mt-8 md:mt-12">
+                    <div class="bg-white max-w-xs md:min-w-xs lg:max-w-md border border-gray-300 rounded-lg shadow-md">
+                        <img class="w-full h-96 object-cover object-top rounded-t-lg" src="../assets/img/Sacha.jpeg" alt="" />
+                        <div class="p-5">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Sacha Christen</h5>
-                        </a>
-                        <div x-data="{ expanded: false }" class="relative">
-                            <p class="text-md md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
-                                Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et de ses conseils techniques, c'est son soutien et sa disponibilité qui font toute la différence.
-                                <br> Ses séances sont à la fois exigeantes et plaisantes, de plus, il reste toujours à mon écoute pour que le plaisir soit toujours présent !
-                            </p>
-                            <button @click="expanded = !expanded" class="text-blue-500 mt-2">
+                            <div x-data="{ expanded: false }" class="relative">
+                                <p class="text-md md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
+                                    Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et de ses conseils techniques, c'est son soutien et sa disponibilité qui font toute la différence.
+                                    <br> Ses séances sont à la fois exigeantes et plaisantes, de plus, il reste toujours à mon écoute pour que le plaisir soit toujours présent !
+                                </p>
+                                <button @click="expanded = !expanded" class="text-blue-500 mt-2">
                                 <span x-show="!expanded">Voir plus</span>
                                 <span x-show="expanded">Voir moins</span>
-                            </button>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="max-w-xs md:min-w-xs lg:max-w-md  border border-gray-200 rounded-lg shadow-sm">
-                    <img class="w-full h-96 object-cover rounded-t-lg" src="../assets/img/Jeremie.jpeg" alt="" />
-                    <div class="p-5">
-                        <a href="#">
+                    <div class="bg-white max-w-xs md:min-w-xs lg:max-w-md border border-gray-300 rounded-lg shadow-md">
+                        <img class="w-full h-96 object-cover rounded-t-lg" src="../assets/img/Jeremie.jpeg" alt="" />
+                        <div class="p-5">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Jérémie Boillat</h5>
-                        </a>
-                        <div x-data="{ expanded: false }" class="relative">
-                            <p class="text-md md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
-                                Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et j’avais tendance à me décourager facilement, faute de discipline et de cadre. Puis, j’ai découvert l’Atelier de l’Endurance et j’ai vu en cette initiative une belle opportunité pour m’engager plus sérieusement dans ma pratique, d’autant plus que je connaissais déjà David, ce qui m’a tout de suite mis en confiance.<br><br> Depuis que j’ai intégré l’atelier il y a quelques semaines, j’ai ressenti un véritable changement : je suis plus discipliné, plus régulier et surtout plus motivé que jamais. Même s’il est encore trop tôt pour observer des résultats flagrants sur mes performances, je sens déjà une nette amélioration dans mon état d’esprit et ma rigueur. Je suis convaincu que cette dynamique positive me permettra d’atteindre de nouveaux objectifs avec confiance et détermination.
-                            </p>
-                            <button @click="expanded = !expanded" class="text-blue-500 mt-2">
+                            <div x-data="{ expanded: false }" class="relative">
+                                <p class="text-md md:text-base text-gray-700 lg:text-justify" :class="expanded ? '' : 'line-clamp-7'">
+                                    Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et j’avais tendance à me décourager facilement, faute de discipline et de cadre. Puis, j’ai découvert l’Atelier de l’Endurance et j’ai vu en cette initiative une belle opportunité pour m’engager plus sérieusement dans ma pratique, d’autant plus que je connaissais déjà David, ce qui m’a tout de suite mis en confiance.<br><br> Depuis que j’ai intégré l’atelier il y a quelques semaines, j’ai ressenti un véritable changement : je suis plus discipliné, plus régulier et surtout plus motivé que jamais. Même s’il est encore trop tôt pour observer des résultats flagrants sur mes performances, je sens déjà une nette amélioration dans mon état d’esprit et ma rigueur. Je suis convaincu que cette dynamique positive me permettra d’atteindre de nouveaux objectifs avec confiance et détermination.
+                                </p>
+                                <button @click="expanded = !expanded" class="text-blue-500 mt-2">
                                 <span x-show="!expanded">Voir plus</span>
                                 <span x-show="expanded">Voir moins</span>
-                            </button>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="py-8 lg:py-12 xl:py-16  border-t border-zinc-400">
-        <div class="container px-8 mx-auto sm:px-16">
-            <h2 class="mb-4 text-xl font-bold md:text-3xl">Frequently Asked Questions</h2>
-            <div class="grid grid-cols-1 gap-0 text-zinc-600 md:grid-cols-2 md:gap-16">
-                <div>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">What is Tails</h5>
-                    <p>Tails is a drag and drop page builder built on Top of TailwindCSS. You can drop components to create a page that you can export.</p>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">Can I try it for Free?</h5>
-                    <p>Absolutely, you can try out tails for free; however, if you wish to access all the components and export the page you'll need to upgrade your account.</p>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">Where do I go to upgrade my account?</h5>
-                    <p>
-                        You can upgrade your account by visiting <a href="https://devdojo.com/pro" class="text-indigo-500 underline" data-primary="indigo-500">The Pro Upgrade Page</a>. You will also gain access to many other applications and sections of the site.
-                        <a href="https://help.hellonext.co/faq/startup-eligibility/" target="_blank">here</a>.
-                    </p>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">How long will I have access to Tails</h5>
-                    <p>
-                        You will have unlimited access to all your pre-built pages; however, if you want to be able to download and export your pages, you'll need a pro account.
-                        <a href="https://paddle.com" target="_blank">Paddle</a> for processing payments.
-                    </p>
-                </div>
-                <div>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">How do I implement into my project</h5>
-                    <p>Implementation in your project is very simple. You can use the exported page as a starting point, or you can copy and paste the HTML into your own page.</p>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">What is the license on the pages?</h5>
-                    <p>You have unlimited use to the templates used in Tails; however, you cannot re-use the templates to sell for others to use.</p>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">Can I cancel my account if I not longer need it?
-                    </h5>
-                    <p>Of course, you can feel free to cancel your account at anytime, and you can feel free to come back and upgrade again whenever you're ready.</p>
-                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">What if I need help with my project?</h5>
-                    <p>If you need assistance implementing the templates into your project you can contact support or you can visit our <a href="https://devdojo.com/questions" class="text-indigo-500 underline" data-primary="indigo-500">question section</a>.
-                    </p>
+        </section>
+        <section class="py-8 lg:py-12 xl:py-16">
+            <div class="container px-8 mx-auto sm:px-16">
+                <h1 class="text-4xl font-extrabold tracking-tight text-zinc-900 sm:text-5xl xl:text-6xl text-left">
+                    <span class="text-blue-600"ass>Comment</span>
+                    <span> ça marche ?</span>
+                </h1>
+                <div class="max-w-sm sm:max-w-md lg:max-w-xl xl:max-w-3xl text-zinc-600">
+                    <h5 class="mt-10 mb-3 font-semibold text-zinc-900">1. Choisis la formule d'accompagnement qui te convient.</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">2. Remplis le formulaire de demande de coaching en renseignant le maximum d’informations possible.</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">3. Tu recevras un message sur WhatsApp de la part de David dans les 24/48h pour te proposer un appel d'évaluation.</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">4. Lors de l'appel d'évaluation, tu précises tes objectifs et répond au question du coach.</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">5. Tu reçois ton plan d'entraînement directement dans Intervals.icu</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">6. Ton plan est continuellement mis à jour par ton coach.</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">7. Vous faites le point sur ton entraînement lors de ton appel mensuel ou hebdomadaire.</h5>
+                    <h5 class="mb-3 font-semibold text-zinc-900">8. On s'assure que ton entraînement va dans la bonne direction !</h5>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="text-zinc-700 body-font border-t border-zinc-400">
-        <div class="container flex flex-col items-center px-8 py-4 mx-auto max-w-7xl sm:flex-row">
-            <a href="/" class="flex items-center text-lg space-x-2 font-extrabold text-gray-900 md:py-0">
-                <img src="https://cdn.devdojo.com/tails/images/0MLcFAqWoYLNn3A95R8euXxFxsF6JViDd4WIqpGX.png" alt="Logo" class="size-20 mr-2"></a>
-            <p class="mt-4 text-sm text-center text-zinc-500 sm:pl-4 sm:border-l sm:border-zinc-300 sm:mt-0">© 2025 Atelier de l'Endurance, Tous droits réservés.
-            </p>
-            <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
-                <a href="https://www.instagram.com/atelier_endurance/" class="text-zinc-500 hover:text-zinc-600">
-                    <span class="sr-only">Instagram</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-            </a>
-            </span>
-        </div>
-    </section>
-
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-
-</body>
-
+        </section>
+        <section class="pb-8 lg:pb-12 xl:pb-16">
+            <div class="container px-8 mx-auto sm:px-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">FAQ</h2>
+                <div class="space-y-4">
+                    <div x-data="{ open: false }" class="border-b pb-2">
+                        <button @click="open = !open" class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
+                        Que puis-je attendre d'un coaching personnalisé ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                        </button>
+                        <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl" x-transition>
+                            <ul class="px-4 list-disc list-inside">
+                                <li class="mb-1">Une augmentation de tes performances.</li>
+                                <li class="mb-1">Une diminution significative du risque de blessure.</li>
+                                <li class="mb-1">Une gestion optimisée de tes pics de forme pour exceller au bon moment.</li>
+                                <li class="mb-1">Un allègement mental en confiant ton entraînement à un expert.</li>
+                                <li class="mb-1">Un plan 100 % personnalisé, adapté à ton profil de coureur et à tes contraintes.</li>
+                                <li class="mb-1">Un coach engagé dans ta progression, te guidant sur quoi faire et éviter.</li>
+                                <li class="mb-1">Un accompagnement sur mesure, tenant compte de ton âge, de ton expérience et de tes objectifs.</li>
+                                <li class="mb-1">Un coach passionné, partageant tes réussites et tes défis.</li>
+                                <li class="mb-1">Un soutien stratégique pour choisir tes courses et planifier efficacement tes saisons.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="border-b pb-2">
+                        <button @click="open = !open" class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
+                        Quelle est la durée d'engagement ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                        </button>
+                        <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl" x-transition>
+                            Nos suivis sont entièrement sans engagement. Vous pouvez effectuer un mois d’essai et décider librement de ne pas poursuivre si le coaching ne vous convient pas.
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="border-b pb-2">
+                        <button @click="open = !open" class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
+                        Y'a t'il un niveau requis ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                        </button>
+                        <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl" x-transition>
+                            Absolument pas ! Votre niveau n’a aucune importance. Que vous soyez un cycliste, un coureur sur route ou un traileur, nous accompagnons aussi bien ceux capables de boucler un semi-marathon en moins d’1h30 que ceux qui se lancent dans leur premier défi d’endurance. L’essentiel est votre motivation à progresser et à apprendre.
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="border-b pb-2">
+                        <button @click="open = !open" class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
+                        Puis-je changer de formule par la suite ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                        </button>
+                        <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl" x-transition>
+                            Oui ! Tu peux changer de formule à tout moment en envoyant un courriel à <a href="mailto:contact@atelier-endurance.ch" class="underline">contact@atelier-endurance.ch</a>. Tu peux aussi mettre ton abonnement sur pause quand tu le souhaites.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-zinc-700 body-font border-t border-zinc-400">
+            <div class="container flex flex-col items-center px-8 py-4 mx-auto max-w-7xl sm:flex-row">
+                <a href="/" class="flex items-center text-lg space-x-2 font-extrabold text-gray-900 md:py-0">
+                <img src="../assets/img/logo_trans.png" alt="Logo" class="size-20 mr-2"></a>
+                <p class="mt-4 text-sm text-center text-zinc-500 sm:pl-4 sm:border-l sm:border-zinc-300 sm:mt-0">© 2025 Atelier de l'Endurance, Tous droits réservés.
+                </p>
+                <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+                    <a href="https://www.instagram.com/atelier_endurance/" class="text-zinc-500 hover:text-zinc-600">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </section>
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </body>
 </html>
