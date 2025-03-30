@@ -7,25 +7,26 @@
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_trans.png" />
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
             body {
-                font-family: "Montserrat";
+            font-family: "Montserrat";
             }
             .bg-image {
-                background-image: url('assets/img/Home.jpg');
+            background-image: url('assets/img/Home.jpg');
             }
             .bg-image::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background-color: rgba(0, 0, 0, 0.2);
-                z-index: 1;
-                height: 100%;
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            height: 100%;
             }
             .bg-image > * {
-                position: relative;
-                z-index: 2;
+            position: relative;
+            z-index: 2;
             }
         </style>
     </head>
@@ -35,11 +36,11 @@
                 <nav class="w-full z-20 top-0 start-0 text-md md:text-lg">
                     <div class="max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4">
                         <a href="/" class="flex items-center space-x-3">
-                            <img src="../assets/img/logo_trans.png" class="h-28" alt="Logo" />
+                        <img src="../assets/img/logo_trans.png" class="h-28" alt="Logo" />
                         </a>
                         <div class="flex md:order-2 space-x-3 md:space-x-0">
                             <a href="https://forms.gle/Cbntq22EH7GRkSKW6" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center">
-                                Nous contacter
+                            Nous contacter
                             </a>
                             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-md text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
                                 <svg
@@ -63,7 +64,7 @@
                                     <a href="/" class="py-1 md:py-2 px-3 text-white md:bg-transparent md:p-0 border-b-3" aria-current="page">Accueil</a>
                                 </li>
                                 <li class="text-center">
-                                    <a href="/coaching/coaching.html" class="py-1 md:py-2 px-3 text-white md:p-0 border-b-3 border-transparent hover:border-white transition-all duration-200">Coaching</a>
+                                    <a href="/pages/coaching.html" class="py-1 md:py-2 px-3 text-white md:p-0 border-b-3 border-transparent hover:border-white transition-all duration-200">Coaching</a>
                                 </li>
                             </ul>
                         </div>
@@ -110,7 +111,7 @@
                                 </p>
                             </div>
                             <div class="relative flex flex-row sm:space-x-4">
-                                <a href="/coaching/coaching.html" class="flex border-2 border-blue-600 items-center px-6 py-3 text-lg text-blue-600 bg-white rounded-full hover:bg-blue-600 hover:text-white w-auto" data-primary="indigo-600" data-rounded="rounded-md">
+                                <a href="/pages/coaching.html" class="flex border-2 border-blue-600 items-center px-6 py-3 text-lg text-blue-600 bg-white rounded-full hover:bg-blue-600 hover:text-white w-auto" data-primary="indigo-600" data-rounded="rounded-md">
                                     En savoir plus
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -152,48 +153,73 @@
             </svg>
         </div>
         <section class="bg-gray-300 w-full pb-8">
-            <div class="box-border flex flex-col items-center px-12 mx-auto text-black justify-center md:flex-row max-w-7xl lg:px-16">
+            <div class="box-border flex flex-col items-center px-12 mx-auto text-black justify-center mb-4 lg:mb-8 md:flex-row max-w-7xl lg:px-16">
                 <!-- Image -->
-                <div class="box-border relative w-full max-w-md mt-5 mb-6 bg-no-repeat bg-contain md:mt-0 lg:mb-0 md:w-1/2 order-first md:order-none">
+                <div class="box-border relative w-full max-w-md mt-5 mb-6 bg-no-repeat bg-contain md:mt-0 md:mb-0 md:w-1/2 order-first md:order-none">
                     <img src="assets/img/David.jpg" class="mx-auto lg:size-96 md:mx-0 rounded-xl" />
+                    <div class="pt-5 justify-self-start lg:w-96">
+                        <span class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium">
+                            Marathon - 3h07
+                        </span>
+                        <span class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium mt-2">
+                            <a target="_blank" href="https://www.ultratiming.live/en/evenement/spt-2024/epreuve/70/resultats">
+                                SwissPeaks 70k 2024 - 12ème scratch
+                            </a> 
+                        </span>
+                        <span class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium mt-2">
+                            Trail du Mont Bally 2025 (27km) - 5ème scratch
+                        </span>
+                    </div>
                 </div>
                 <!-- Content -->
                 <div class="box-border w-full text-black text-justify max-w-md sm:max-w-none sm:w-md md:w-1/2 md:pl-10 lg:pl-0">
                     <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-zinc-300 lg:text-3xl md:text-2xl">
                         David Dieperink
                     </h2>
-                    <p class="pt-4 pb-4 m-0 text-black lg:text-lg">
+                    <p class="pt-4 pb-4 text-sm lg:text-base">
                         Ancien fumeur et fêtard, j’ai pris un tournant décisif en 2021 en me reprenant en main, avec une perte de poids comme premier objectif. Poussé par mon frère, j’ai tenté mon premier 10 km… et j'ai détesté la course à pied ! C’est alors que je me suis tourné vers les sports de combat, que j’ai pratiqués jusqu’en 2023.
                     </p>
-                    <p class="pb-4 m-0 text-black lg:text-lg">
+                    <p class="pb-4 text-sm lg:text-base">
                         Mais mon endurance restait un frein, et une nouvelle fois, mon frère m’a embarqué dans sa passion : le vélo. De fil en aiguille, j’ai commencé à rouler, puis à courir, et sans même m’en rendre compte, je me suis lancé des défis toujours plus grands et ambitieux : courir mon premier marathon, terminer un trail de 70 km…
                     </p>
-                    <p class="pb-4 m-0 text-black lg:text-lg">
+                    <p class="text-sm lg:text-base">
                         Aujourd’hui, je suis tombé amoureux des sports d’endurance. La physiologie et l’entraînement me passionnent, et cette soif de progression m’a donné envie d’aider les autres à atteindre leurs propres objectifs.
                     </p>
                 </div>
                 <!-- End Content -->
             </div>
-            <div class="box-border flex flex-col items-center content-center px-12 mx-auto text-black border-0 border-zinc-300 border-solid justify-center md:flex-row max-w-7xl lg:px-16">
+            <div class="box-border flex flex-col items-center content-center px-12 mx-auto text-black justify-center md:flex-row max-w-7xl lg:px-16">
                 <!-- Content -->
                 <div class="box-border w-full text-black text-justify max-w-md sm:max-w-none sm:w-md md:w-1/2 md:pr-10 lg:pr-0">
                     <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-zinc-300 lg:text-2xl md:text-2xl">
                         Anthony Dieperink
                     </h2>
-                    <p class="pt-4 pb-4 m-0 text-black lg:text-lg">
-                        Ancien fumeur et fêtard, j’ai pris un tournant décisif en 2021 en me reprenant en main, avec une perte de poids comme premier objectif. Poussé par mon frère, j’ai tenté mon premier 10 km… et j'ai détesté la course à pied ! C’est alors que je me suis tourné vers les sports de combat, que j’ai pratiqués jusqu’en 2023.
+                    <p class="pt-4 pb-4 text-sm lg:text-base">
+                        Durant la période Covid, j’ai ressenti le besoin de me remettre en forme. Confiné et lassé de l’inactivité, j’ai décidé de me lancer un défi : la course à pied. Mes premiers kilomètres ont été laborieux, mais petit à petit, j’ai pris goût à l’effort et aux sensations qu’il procurait.
                     </p>
-                    <p class="pb-4 m-0 text-black border-0 border-zinc-300 lg:text-lg">
-                        Mais mon cardio restait un frein, et une nouvelle fois, mon frère m’a embarqué dans sa passion : le vélo. De fil en aiguille, j’ai commencé à rouler, puis à courir, et sans même m’en rendre compte, je me suis lancé des défis toujours plus grands : courir mon premier marathon, terminer un trail de 70 km…
+                    <p class="pb-4 text-sm lg:text-base">
+                        Après plusieurs mois de pratique, l’envie de diversifier mon entraînement s’est imposée. En 2022, je suis monté sur un vélo, sans me douter que ce serait une révélation. D’abord par curiosité, puis par passion, j’ai enchaîné les sorties, allongeant progressivement les distances. Chaque coup de pédale était une nouvelle étape, un nouveau défi à relever.
                     </p>
-                    <p class="pb-4 m-0 text-black border-0 border-zinc-300 lg:text-lg">
-                        Aujourd’hui, je suis tombé amoureux des sports d’endurance. La physiologie et l’entraînement me passionnent, et cette soif de progression m’a donné envie d’aider les autres à atteindre leurs propres objectifs.
+                    <p class="text-sm lg:text-base">
+                        Aujourd’hui, le sport est devenu bien plus qu’un simple passe-temps : c’est un mode de vie. L’endurance, la progression, la découverte de mes propres limites me motivent au quotidien, et cette passion ne cesse de grandir. Fort de cette expérience, j’ai désormais envie de partager ce chemin avec d’autres, de les accompagner dans leur propre transformation et de les aider à atteindre leurs objectifs, quels qu’ils soient.
                     </p>
                 </div>
                 <!-- End Content -->
                 <!-- Image -->
-                <div class="box-border relative w-full max-w-md mt-5 mb-6 bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 lg:mb-0 md:w-1/2 xl:justify-end order-first md:order-none">
+                <div class="box-border relative w-full max-w-md mt-5 mb-6 bg-no-repeat bg-contain rounded-lg md:ml-0 md:mt-0 md:mb-0 md:w-1/2 xl:justify-end order-first md:order-none">
                     <img src="assets/img/Anthony.jpeg" class="lg:size-96 rounded-xl justify-self-end" />
+                    <div class="pt-5 justify-self-end lg:w-96">
+                        <span class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium">
+                            <a href="https://www.mso.swiss/events/1777-tour-des-stations/results?type=SCRATCH&typeId=11765" target="_blank">
+                                TDS Superfondo 2023 - 3ème scratch
+                            </a>
+                        </span>
+                        <span class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium mt-2">
+                            <a href="https://www.mso.swiss/events/2187-tour-des-stations/results?type=SCRATCH&typeId=13256" target="_blank">
+                                TDS Superfondo 2024 - 5ème scratch
+                            </a>
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
