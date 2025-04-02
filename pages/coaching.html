@@ -69,29 +69,30 @@
                                 <p class="m-0 text-xl font-semibold">3 mois</p>
                             </div>
                             <div class="flex justify-center items-end">
-                                <p class="m-0 text-xl md:text-2xl font-semibold">79 CHF</p>
+                                <p class="m-0 text-xl md:text-2xl font-semibold">89 CHF</p>
                                 <p>/mois</p>
                             </div>
-                            <div class="flex justify-center mt-8">
+                            <div class="flex justify-center mt-6">
                                 <p class="m-0 text-xl font-semibold">6 mois</p>
                             </div>
                             <div class="flex justify-center items-end">
-                                <p class="m-0 text-xl md:text-2xl font-semibold">75 CHF</p>
+                                <p class="m-0 text-xl md:text-2xl font-semibold">85 CHF</p>
                                 <p>/mois</p>
                             </div>
-                            <div class="flex justify-center mt-8">
+                            <div class="flex justify-center mt-6">
                                 <p class="m-0 text-xl font-semibold">12 mois</p>
                             </div>
                             <div class="flex justify-center items-end">
-                                <p class="m-0 text-xl md:text-2xl font-semibold">70 CHF</p>
+                                <p class="m-0 text-xl md:text-2xl font-semibold">80 CHF</p>
                                 <p>/mois</p>
                             </div>
                         </div>
-                        <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank" class="inline-flex justify-center w-full px-4 py-3 mt-8 text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg"> Choisir cette formule
-                        </a>
+                        <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="cursor-pointer text-blue-600 border-2 border-blue-600 mt-8 hover:bg-blue-700 hover:border-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-8 py-1.5 text-center sm:text-base md:text-lg" type="button">
+                            Détails du programme
+                        </button>
                     </div>
                     <!-- Price 2 -->
-                    <div class="mx-auto relative z-10 flex flex-col items-center max-w-xs md:min-w-xs lg:max-w-md p-4 border border-gray-300 shadow-sm rounded-lg sm:p-6 md:mt-8 md:p-8 md:mx-0 lg:max-w-md">
+                    <div class="mx-auto flex flex-col items-center max-w-xs md:min-w-xs lg:max-w-md p-4 border border-gray-300 shadow-sm rounded-lg sm:p-6 md:mt-8 md:p-8 md:mx-0 lg:max-w-md">
                         <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black sm:text-3xl md:text-4xl">
                             Performance
                         </h3>
@@ -101,33 +102,66 @@
                                 <p class="m-0 text-xl font-semibold">3 mois</p>
                             </div>
                             <div class="flex justify-center items-end">
-                                <p class="m-0 text-xl md:text-2xl font-semibold">119 CHF</p>
+                                <p class="m-0 text-xl md:text-2xl font-semibold">139 CHF</p>
                                 <p>/mois</p>
                             </div>
-                            <div class="flex justify-center mt-8">
+                            <div class="flex justify-center mt-6">
                                 <p class="m-0 text-xl font-semibold">6 mois</p>
                             </div>
                             <div class="flex justify-center items-end">
-                                <p class="m-0 text-xl md:text-2xl font-semibold">115 CHF</p>
+                                <p class="m-0 text-xl md:text-2xl font-semibold">135 CHF</p>
                                 <p>/mois</p>
                             </div>
-                            <div class="flex justify-center mt-8">
+                            <div class="flex justify-center mt-6">
                                 <p class="m-0 text-xl font-semibold">12 mois</p>
                             </div>
                             <div class="flex justify-center items-end">
-                                <p class="m-0 text-xl md:text-2xl font-semibold">110 CHF</p>
+                                <p class="m-0 text-xl md:text-2xl font-semibold">130 CHF</p>
                                 <p>/mois</p>
                             </div>
                         </div>
-                        <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank" class="inline-flex justify-center w-full px-4 py-3 mt-8 text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg"> Choisir cette formule
-                        </a>
+                        <!-- Modal toggle -->
+                        <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="cursor-pointer text-blue-600 border-2 border-blue-600 mt-8 hover:bg-blue-700 hover:border-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-8 py-1.5 text-center sm:text-base md:text-lg" type="button">
+                            Détails du programme
+                        </button>
+                    </div>
+                    
+                    <!-- Main modal -->
+                    <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-white rounded-lg shadow-sm">
+                                <!-- Modal header -->
+                                <div class="flex items-center justify-between p-4 md:p-5 border-b border-gray-200 rounded-t">
+                                    <h3 class="text-xl font-semibold text-gray-900">
+                                        Détails des formules
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img src="../assets/img/Tarifications.png" alt="Tarifications">
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                                    <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank" class="mx-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-8 py-2 text-center sm:text-base md:text-lg">Nous contacter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="text-center text-zinc-900 mt-4 md:mt-6">
                     <p class="mx-auto mb-6 text-sm sm:text-base sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
                         *Le tarif mensuel n'inclut pas l'évaluation initiale, facturée au prix de 50.- CHF.
                     </p>
-                    <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank" class="mx-auto mt-8 px-8 py-3 text-sm leading-none text-center text-blue-600 no-underline border-2 border-blue-600 rounded-md cursor-pointer hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700 focus-within:text-white sm:text-base md:text-lg">Nous contacter
+                    <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank" class="mx-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-8 py-3 text-center sm:text-base md:text-lg">Nous contacter
                     </a>
                 </div>
             </div>
@@ -247,7 +281,7 @@
                         <span x-text="open ? '➖' : '➕'"></span>
                         </button>
                         <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl" x-transition>
-                            Nos suivis sont entièrement sans engagement. Vous pouvez effectuer un mois d’essai et décider librement de ne pas poursuivre si le coaching ne vous convient pas.
+                            Nos suivis nécessitent un engagement minimum de <b>3 mois</b>, avec un paiement mensuel. Si vous souhaitez résilier votre contrat, vous devez nous en informer au moins un mois avant le dernier renouvellement.
                         </div>
                     </div>
                     <div x-data="{ open: false }" class="border-b pb-2">
