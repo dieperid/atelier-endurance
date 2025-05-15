@@ -1,0 +1,5 @@
+# Configuration du site Jekyll
+title: Atelier de l'Endurance
+description: "Site web de l'Atelier de l'Endurance"
+url: "https://www.atelier-endurance.ch/"
+source: src

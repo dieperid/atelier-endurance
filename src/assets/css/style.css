@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    font-family: "Montserrat";
+}
+
+.hero-image {
+    background-image: url('../img/Home.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    height: 100%;
+}
+
+.border-hover-transition {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: transparent;
+    transition: border-color 200ms ease;
+}
+
+.border-hover-transition {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: transparent;
+    transition: border-color 200ms ease;
+}
+
+/* Survol blanc (ex: sur index) */
+.border-hover-white:hover {
+    border-color: white;
+}
+
+/* Survol noir (ex: sur autres pages) */
+.border-hover-black:hover {
+    border-color: black;
+}
+
+/* Actif blanc */
+.active-white {
+    border-bottom-width: 3px;
+    border-color: white;
+}
+
+/* Actif noir */
+.active-black {
+    border-bottom-width: 3px;
+    border-color: black;
+}
