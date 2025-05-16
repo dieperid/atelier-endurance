@@ -1,6 +1,6 @@
 <header class="{% if page.nav_active == 'index' %}absolute{% else %}relative{% endif %} top-0 left-0 w-full z-30">
     <nav class="w-full text-md md:text-lg">
-        <div class="container flex flex-wrap items-center justify-between mx-auto px-4 sm:px-16">
+        <div class="container mx-auto px-4 sm:px-16 flex flex-wrap items-center justify-between">
             <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
                 <img src="{{ '/assets/img/logo_trans.png' | relative_url }}" class="h-28" alt="Logo" />
             </a>
@@ -21,9 +21,9 @@
             </div>
             <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="orbitron font-semibold flex flex-col md:space-x-8 space-y-4 md:space-y-0 md:flex-row md:mt-0 md:border-0">
+                    class="orbitron font-semibold flex flex-col md:space-x-8 space-y-4 md:space-y-0 md:flex-row md:mt-0 md:border-0 mb-4 md:mb-0">
                     <li class="text-center">
-                        <a href="{{ '/' | relative_url }}" class="py-1 md:py-2 px-3 md:bg-transparent md:p-0 border-hover-transition
+                        <a href="{{ '/' | relative_url }}" class="py-1 md:py-2 px-3 md:px-0 md:bg-transparent border-hover-transition
                       {% if page.nav_active == 'index' %}
                           active-white text-white border-hover-white
                       {% else %}
@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li class="text-center">
-                        <a href="{{ '/pages/coaching.html' | relative_url }}" class="py-1 md:py-2 px-3 md:p-0 border-hover-transition
+                        <a href="{{ '/pages/coaching.html' | relative_url }}" class="py-1 md:py-2 px-3 md:px-0 border-hover-transition
                       {% if page.nav_active == 'coaching' %}
                           active-black text-black border-hover-black
                       {% else %}
