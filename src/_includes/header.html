@@ -36,8 +36,10 @@
                         <a href="{{ '/pages/coaching.html' | relative_url }}" class="py-1 md:py-2 px-3 md:px-0 border-hover-transition
                       {% if page.nav_active == 'coaching' %}
                           active-black text-black border-hover-black
-                      {% else %}
+                      {% elsif page.nav_active == 'index' %}
                           text-white border-hover-white
+                      {% else %}
+                          text-black border-hover-black
                       {% endif %}">
                             Coaching
                         </a>
