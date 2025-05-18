@@ -1,17 +1,17 @@
 <header class="{% if page.nav_active == 'index' %}absolute{% else %}relative{% endif %} top-0 left-0 w-full z-30">
-    <nav class="w-full text-md md:text-lg">
+    <nav class="w-full">
         <div class="container mx-auto px-4 sm:px-16 flex flex-wrap items-center justify-between">
             <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
-                <img src="{{ '/assets/img/logo_trans.png' | relative_url }}" class="h-28" alt="Logo" />
+                <img src="{{ '/assets/img/logo_trans.png' | relative_url }}" class="h-24" alt="Logo" />
             </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0">
+            <div class="flex lg:order-2 space-x-3 lg:space-x-0">
                 <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center">
                     Nous contacter
                 </a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="{% if page.nav_active == 'index' %}text-white{% else %}text-black{% endif %}
-                    inline-flex items-center p-2 w-10 h-10 justify-center text-md rounded-lg md:hidden hover:bg-gray-100" aria-controls="navbar-sticky" aria-expanded="false">
+                    inline-flex items-center p-2 w-10 h-10 justify-center text-md rounded-lg lg:hidden hover:bg-gray-100" aria-controls="navbar-sticky" aria-expanded="false">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -19,29 +19,42 @@
                     </svg>
                 </button>
             </div>
-            <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
                 <ul
-                    class="orbitron font-semibold flex flex-col md:space-x-8 space-y-4 md:space-y-0 md:flex-row md:mt-0 md:border-0 mb-4 md:mb-0">
+                    class="orbitron font-medium flex flex-col lg:flex-row mb-4 lg:mb-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 space-y-2 lg:space-y-0 lg:space-x-8">
+
                     <li class="text-center">
-                        <a href="{{ '/' | relative_url }}" class="py-1 md:py-2 px-3 md:px-0 md:bg-transparent border-hover-transition
-                      {% if page.nav_active == 'index' %}
-                          active-white text-white border-hover-white
-                      {% else %}
-                          text-black border-hover-black
-                      {% endif %}">
+                        <a href="{{ '/' | relative_url }}" class="py-1 px-3 lg:px-0 lg:bg-transparent border-hover-transition
+                        {% if page.nav_active == 'index' %}
+                            active border-hover-white
+                        {% else %}
+                            text-black border-hover-black
+                        {% endif %}">
                             Accueil
                         </a>
                     </li>
                     <li class="text-center">
-                        <a href="{{ '/pages/coaching.html' | relative_url }}" class="py-1 md:py-2 px-3 md:px-0 border-hover-transition
-                      {% if page.nav_active == 'coaching' %}
-                          active-black text-black border-hover-black
-                      {% elsif page.nav_active == 'index' %}
-                          text-white border-hover-white
-                      {% else %}
-                          text-black border-hover-black
-                      {% endif %}">
+                        <a href="{{ '/pages/coaching.html' | relative_url }}" class="py-1 px-3 lg:px-0 border-hover-transition
+                        {% if page.nav_active == 'coaching' %}
+                            active border-hover-black
+                        {% elsif page.nav_active == 'index' %}
+                            text-white border-hover-white
+                        {% else %}
+                            border-hover-black
+                        {% endif %}">
                             Coaching
+                        </a>
+                    </li>
+                    <li class="text-center">
+                        <a href="{{ '/pages/temoignages.html' | relative_url }}" class="py-1 px-3 lg:px-0 border-hover-transition
+                        {% if page.nav_active == 'temoignages' %}
+                            active border-hover-black
+                        {%elsif page.nav_active == 'index' %}
+                            text-white border-hover-white
+                        {% else %}
+                            border-hover-black
+                        {% endif %}">
+                            Témoignages
                         </a>
                     </li>
                 </ul>
