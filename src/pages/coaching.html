@@ -9,23 +9,32 @@ nav_active: coaching
             <h1 class="orbitron italic text-4xl font-semibold tracking-tight md:text-7xl">
                 Coaching
             </h1>
-            <p class="text-md lg:text-xl sm:text-justify">
-                À l’Atelier de l’Endurance, l’athlète est au cœur de l’approche. Que tu sois débutant, en quête de
-                progression ou en recherche de performance, notre méthode d’entraînement s’adapte à ton niveau, ton
-                rythme de vie et tes objectifs.
-                Nos formules de coaching en ligne — en course à pied, trail, vélo ou triathlon — allient flexibilité
-                et
-                efficacité.
-                Profite d’un suivi personnalisé, d’un plan d’entraînement 100% sur mesure et d’un accompagnement via
-                Intervals.icu pour suivre ta progression en toute simplicité.
-                Parce que chaque athlète est unique, nous proposons un coaching à la carte, pensé pour évoluer avec
-                toi,
-                en respectant tes contraintes et en t’aidant à atteindre tes objectifs, pas à pas.
-            </p>
+            <div class="sm:text-justify">
+                <p class="lg:text-xl">
+                    À l’Atelier de l’Endurance, l’athlète est au cœur de l’approche. Que tu sois débutant, en quête de
+                    progression ou en recherche de performance, notre méthode d’entraînement s’adapte à ton niveau, ton
+                    rythme de vie et tes objectifs. Nos formules de coaching en ligne — en course à pied, trail, vélo ou
+                    triathlon — allient flexibilité et efficacité. Profite d’un suivi personnalisé, d’un plan
+                    d’entraînement
+                    100% sur mesure et d’un accompagnement via Intervals.icu pour suivre ta progression en toute
+                    simplicité.
+                    Parce que chaque athlète est unique, nous proposons un coaching à la carte, pensé pour évoluer avec
+                    toi,
+                    en respectant tes contraintes et en t’aidant à atteindre tes objectifs, pas à pas.
+                </p>
+                <p class="mt-4">
+                    <span class="font-medium">Note :</span> pour un suivi en <span
+                        class="font-semibold">triathlon</span>,
+                    un supplément de <span class="font-semibold">20.- CHF</span> est appliqué à chaque formule, en
+                    raison de
+                    la complexité et du volume spécifique de cette discipline.<br><br>
+                </p>
+            </div>
+
         </div>
         <!-- Formules -->
         <div
-            class="mt-4 md:mt-8 grid grid-cols-1 lg:grid-cols-3 items-center md:items-stretch md:gap-4 space-y-4 md:space-y-0">
+            class="mt-2 md:mt-4 grid grid-cols-1 lg:grid-cols-3 items-center md:items-stretch md:gap-4 space-y-4 md:space-y-0">
             <!-- Endurance -->
             <div
                 class="flex flex-col border border-gray-300 shadow-sm rounded-lg p-6 max-w-xs lg:max-w-md mx-auto lg:mx-0">
@@ -53,7 +62,7 @@ nav_active: coaching
                                     </path>
                                 </svg>
                             </div>
-                            Évaluation initialie*
+                            Évaluation initialie
                         </li>
                         <li class="flex w-full font-semibold">
                             <div>
@@ -142,8 +151,8 @@ nav_active: coaching
                 </div>
                 <div class="space-y-6 my-6">
                     <p class="text-md md:text-base text-center xl:text-justify">
-                        La formule Performance complète Endurance avec préparation physique et suivi one-to-one
-                        personnalisés pour optimiser votre performance.
+                        La formule Performance complète Endurance avec la préparation physique et le suivi one-to-one
+                        pour optimiser votre performance.
                     </p>
                     <ul class="space-y-3 text-md lg:text-base self-start">
                         <li class="flex w-full font-semibold">
@@ -155,7 +164,7 @@ nav_active: coaching
                                     </path>
                                 </svg>
                             </div>
-                            Évaluation initialie*
+                            Évaluation initialie
                         </li>
                         <li class="flex w-full font-semibold">
                             <div>
@@ -266,7 +275,7 @@ nav_active: coaching
                                     d="M5 13l4 4L19 7">
                                 </path>
                             </svg>
-                            Évaluation initialie*
+                            Évaluation initialie
                         </li>
                         <li class="flex w-full font-semibold">
                             <svg class="w-6 h-6 mr-2 font-semibold text-blue-600" fill="none" stroke="currentColor"
@@ -306,10 +315,10 @@ nav_active: coaching
                 </a>
             </div>
         </div>
-        <div class="text-center mt-4">
-            <p class="mx-auto mb-6 text-sm sm:text-base sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
+        <div class="text-center mt-8">
+            <!-- <p class="mx-auto mb-6 text-sm sm:text-base sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
                 *Le tarif mensuel n'inclut pas l'évaluation initiale de 45 minutes, facturée au prix de 50.- CHF.
-            </p>
+            </p> -->
             <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md mt-8 px-8 py-3 text-center cursor-pointer">
                 Nous contacter
@@ -475,8 +484,15 @@ nav_active: coaching
                 </button>
                 <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
                     x-transition>
-                    Nos suivis sont entièrement sans engagement. Vous pouvez effectuer un mois d’essai et décider
-                    librement de ne pas poursuivre si le coaching ne vous convient pas.
+                    <p class="text-justify">
+                        Nos formules <span class="font-semibold">Endurance</span> et <span
+                            class="font-semibold">Performance</span> sont proposées avec un engagement minimum de 3
+                        mois.
+                        Pour plus de flexibilité, le <span class="font-semibold">Plan mensuel</span> est disponible
+                        <span class="font-semibold">sans engagement</span>,
+                        vous permettant de tester le coaching pendant un mois et d’arrêter librement si cela ne vous
+                        convient pas.
+                    </p>
                 </div>
             </div>
             <div x-data="{ open: false }" class="border-b pb-2">
@@ -487,10 +503,13 @@ nav_active: coaching
                 </button>
                 <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
                     x-transition>
-                    Absolument pas ! Votre niveau n’a aucune importance. Que vous soyez un cycliste, un coureur sur
-                    route ou un traileur, nous accompagnons aussi bien ceux capables de boucler un semi-marathon en
-                    moins d’1h30 que ceux qui se lancent dans leur premier défi d’endurance. L’essentiel est votre
-                    motivation à progresser et à apprendre.
+                    <p class="text-justify">
+                        Pas du tout ! Quel que soit votre niveau, nous vous accompagnons avec la même attention.
+                        Que vous pratiquiez le cyclisme, la course sur route, le trail ou le triathlon, que vous visiez
+                        un semi-marathon en moins d’1h30
+                        ou que vous releviez votre tout premier défi d’endurance, notre priorité est votre motivation à
+                        progresser et à apprendre.
+                    </p>
                 </div>
             </div>
             <div x-data="{ open: false }" class="border-b pb-2">
@@ -501,9 +520,20 @@ nav_active: coaching
                 </button>
                 <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
                     x-transition>
-                    Oui ! Tu peux changer de formule à tout moment en envoyant un courriel à <a
-                        href="mailto:contact@atelier-endurance.ch" class="underline">contact@atelier-endurance.ch</a>.
-                    Tu peux aussi décider d'arrêter ton abonnement à la fin du mois.
+                    <p class="text-justify">
+                        Oui, tout à fait&nbsp;! Si tu as opté pour le <span class="font-semibold">Plan mensuel</span>,
+                        tu peux passer à tout moment vers la formule <span class="font-semibold">Endurance</span> ou
+                        <span class="font-semibold">Performance</span> en écrivant soit par e-mail à <a
+                            href="mailto:contact@atelier-endurance.ch"
+                            class="text-blue-600 font-medium">contact@atelier-endurance.ch</a>, soit directement à David
+                        sur WhatsApp.
+                        Si tu es déjà engagé sur une formule <span class="font-semibold">Endurance</span>
+                        ou <span class="font-semibold">Performance</span>, tu pourras changer de formule une fois la
+                        période d’engagement terminée.
+                        Tu peux également décider d’arrêter ton abonnement à la fin de ton mois en cours, selon les
+                        conditions de ta formule.
+                    </p>
+
                 </div>
             </div>
             <div x-data="{ open: false }" class="border-b pb-2">
