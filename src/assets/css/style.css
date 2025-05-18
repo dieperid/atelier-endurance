@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=:wght@400..900&family=Zen+Dots&display=swap');
 
 body {
     font-family: "Montserrat";
-}
-
-.orbitron {
-    font-family: "Orbitron";
 }
 
 .hero-image {
@@ -30,14 +26,7 @@ body {
 }
 
 .border-hover-transition {
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-color: transparent;
-    transition: border-color 200ms ease;
-}
-
-.border-hover-transition {
-    border-bottom-width: 3px;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
     border-color: transparent;
     transition: border-color 200ms ease;
@@ -53,14 +42,6 @@ body {
     border-color: black;
 }
 
-/* Actif blanc */
-.active-white {
-    border-bottom-width: 3px;
-    border-color: white;
-}
-
-/* Actif noir */
-.active-black {
-    border-bottom-width: 3px;
-    border-color: black;
+.active {
+    color: #155dfc;
 }
