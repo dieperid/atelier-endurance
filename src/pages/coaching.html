@@ -314,236 +314,150 @@ nav_active: coaching
             </div>
         </div>
         <div class="text-center mt-8">
-            <!-- <p class="mx-auto mb-6 text-sm sm:text-base sm:max-w-lg md:max-w-2xl lg:max-w-5xl">
-                *Le tarif mensuel n'inclut pas l'évaluation initiale de 45 minutes, facturée au prix de 50.- CHF.
-            </p> -->
             <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md mt-8 px-8 py-3 text-center cursor-pointer">
                 Nous contacter
             </a>
         </div>
-    </div>
-</div>
 
-<div class="w-full h-auto mt-6">
-    <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M0 43.9999C106.667 43.9999 213.333 7.99994 320 7.99994C426.667 7.99994 533.333 43.9999 640 43.9999C746.667 43.9999 853.333 7.99994 960 7.99994C1066.67 7.99994 1173.33 43.9999 1280 43.9999C1386.67 43.9999 1440 19.0266 1440 9.01329V100H0V43.9999Z"
-            class="fill-current text-gray-300"></path>
-    </svg>
-</div>
-
-<!-- Témoignages -->
-<div class="bg-gray-300 pb-8 lg:pb-12 xl:pb-16">
-    <div class="container mx-auto px-10 lg:px-16">
-        <p
-            class="text-center relative flex w-full text-md sm:text-lg font-bold tracking-wider text-blue-600 uppercase justify-center">
-            Ne nous croyez pas sur parole
-        </p>
-        <div class="sm:px-12 flex flex-col w-full justify-center md:px-0">
-            <h2 class="relative flex items-start mt-2 text-3xl md:text-5xl font-bold justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                    class="absolute right-16 hidden w-12 h-12 -mt-2 -mr-16 text-gray-500 lg:inline-block"
-                    viewBox="0 0 975.036 975.036">
-                    <path
-                        d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                    </path>
-                </svg>
-                Témoignages
+        <!-- Comment ça marche -->
+        <div class="pt-12">
+            <h2 class="text-4xl font-extrabold tracking-tight xl:text-6xl text-left italic">
+                <span class="text-blue-600">Comment</span>
+                <span> ça marche ?</span>
             </h2>
-            <div class="px-8 h-0.5 mt-4 md:mt-6 bg-gray-500 rounded-full"></div>
+            <div class="space-y-3 font-medium">
+                <p class="mt-4 md:mt-6">1. Choisis la formule d'accompagnement qui te convient.
+                </p>
+                <p>2. Remplis le formulaire de demande de coaching en renseignant
+                    le maximum d’informations possible.</p>
+                <p>3. Tu recevras un message sur WhatsApp de la part de David dans
+                    les 24/48h pour te proposer un appel d'évaluation.</p>
+                <p>4. Lors de l'appel d'évaluation, tu précises tes objectifs et
+                    répond au question du coach.</p>
+                <p>5. Tu reçois ton plan d'entraînement directement dans
+                    Intervals.icu</p>
+                <p>6. Ton plan est continuellement mis à jour par ton coach.</p>
+                <p>7. Vous faites le point sur ton entraînement lors de ton appel
+                    mensuel ou hebdomadaire.</p>
+                <p>8. On s'assure que ton entraînement va dans la bonne direction
+                    !</p>
+            </div>
         </div>
-        <div class="flex flex-col justify-center md:flex-row gap-4 mt-8 md:mt-12">
-            <div
-                class="mx-auto bg-white max-w-xs md:min-w-xs lg:max-w-md border md:mx-0 border-gray-300 rounded-lg shadow-md">
-                <img class="w-full h-96 object-cover object-top rounded-t-lg"
-                    src="{{'/assets/img/Sacha.jpeg' | relative_url }}" alt="Sacha" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Sacha Christen</h5>
-                    <div x-data="{ expanded: false }" class="relative">
-                        <div class="text-sm md:text-base text-gray-700 lg:text-justify"
-                            :class="expanded ? '' : 'line-clamp-7'">
-                            <p>
-                                Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me
-                                permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et de
-                                ses conseils techniques, c'est son soutien et sa disponibilité qui font toute la
-                                différence.
-                            </p>
-                            <p>
-                                Ses séances sont à la fois exigeantes et plaisantes, de plus, il reste toujours à mon
-                                écoute pour que le plaisir soit toujours présent !
-                            </p>
-                        </div>
-                        <button @click="expanded = !expanded" class="text-blue-500 mt-2">
-                            <span x-show="!expanded">Voir plus</span>
-                            <span x-show="expanded">Voir moins</span>
-                        </button>
+
+        <!-- FAQ -->
+        <div class="pt-12">
+            <h2 class="text-4xl font-bold mb-4">FAQ</h2>
+            <div class="space-y-4">
+                <div x-data="{ open: false }" class="border-b pb-2">
+                    <button @click="open = !open"
+                        class="w-full text-left flex justify-between items-center font-medium py-2 focus:outline-none">
+                        Que puis-je attendre d'un coaching personnalisé ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                    </button>
+                    <div x-show="open" class="mt-2 max-w-md md:max-w-lg lg:max-w-4xl xl:max" x-transition>
+                        <ul class="px-4 list-disc list-inside">
+                            <li class="mb-1">Une augmentation de tes performances.</li>
+                            <li class="mb-1">Une diminution significative du risque de blessure.</li>
+                            <li class="mb-1">Une gestion optimisée de tes pics de forme pour exceller au bon moment.
+                            </li>
+                            <li class="mb-1">Un allègement mental en confiant ton entraînement à un expert.</li>
+                            <li class="mb-1">Un plan 100 % personnalisé, adapté à ton profil de coureur et à tes
+                                contraintes.</li>
+                            <li class="mb-1">Un coach engagé dans ta progression, te guidant sur quoi faire et
+                                éviter.
+                            </li>
+                            <li class="mb-1">Un accompagnement sur mesure, tenant compte de ton âge, de ton
+                                expérience
+                                et de
+                                tes objectifs.</li>
+                            <li class="mb-1">Un coach passionné, partageant tes réussites et tes défis.</li>
+                            <li class="mb-1">Un soutien stratégique pour choisir tes courses et planifier
+                                efficacement
+                                tes
+                                saisons.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div
-                class="mx-auto bg-white max-w-xs md:min-w-xs lg:max-w-md md:mx-0 border border-gray-300 rounded-lg shadow-md">
-                <img class="w-full h-96 object-cover rounded-t-lg" src="{{ '/assets/img/Jeremie.jpeg' | relative_url }}"
-                    alt="Jérémie" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Jérémie Boillat</h5>
-                    <div x-data="{ expanded: false }" class="relative">
-                        <div class="text-sm md:text-base text-gray-700 lg:text-justify"
-                            :class="expanded ? '' : 'line-clamp-7'">
-                            <p>
-                                Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement
-                                suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et
-                                j’avais tendance à me décourager facilement, faute de discipline et de cadre. Puis, j’ai
-                                découvert l’Atelier de l’Endurance et j’ai vu en cette initiative une belle opportunité
-                                pour m’engager plus sérieusement dans ma pratique, d’autant plus que je connaissais déjà
-                                David, ce qui m’a tout de suite mis en confiance.
-                            </p>
-                            <br>
-                            <p>
-                                Depuis que j’ai intégré l’atelier il y a quelques semaines, j’ai ressenti un véritable
-                                changement : je suis plus discipliné, plus régulier et surtout plus motivé que jamais.
-                                Même s’il est encore trop tôt pour observer des résultats flagrants sur mes
-                                performances, je sens déjà une nette amélioration dans mon état d’esprit et ma rigueur.
-                                Je suis convaincu que cette dynamique positive me permettra d’atteindre de nouveaux
-                                objectifs avec confiance et détermination.
-                            </p>
-                        </div>
-                        <button @click="expanded = !expanded" class="text-blue-500 mt-2">
-                            <span x-show="!expanded">Voir plus</span>
-                            <span x-show="expanded">Voir moins</span>
-                        </button>
+                <div x-data="{ open: false }" class="border-b pb-2">
+                    <button @click="open = !open"
+                        class="w-full text-left flex justify-between items-center font-medium py-2 focus:outline-none">
+                        Quelle est la durée d'engagement ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                    </button>
+                    <div x-show="open" class="mt-2" x-transition>
+                        <p class="text-justify">
+                            Nos formules <span class="font-semibold">Endurance</span> et <span
+                                class="font-semibold">Performance</span> sont proposées avec un engagement minimum
+                            de 3
+                            mois.
+                            Pour plus de flexibilité, le <span class="font-semibold">Plan mensuel</span> est
+                            disponible
+                            <span class="font-semibold">sans engagement</span>,
+                            vous permettant de tester le coaching pendant un mois et d’arrêter librement si cela ne
+                            vous
+                            convient pas.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div x-data="{ open: false }" class="border-b pb-2">
+                    <button @click="open = !open"
+                        class="w-full text-left flex justify-between items-center font-medium py-2 focus:outline-none">
+                        Y'a t'il un niveau requis ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                    </button>
+                    <div x-show="open" class="mt-2" x-transition>
+                        <p class="text-justify">
+                            Pas du tout ! Quel que soit votre niveau, nous vous accompagnons avec la même attention.
+                            Que vous pratiquiez le cyclisme, la course sur route, le trail ou le triathlon, que vous
+                            visiez
+                            un semi-marathon en moins d’1h30
+                            ou que vous releviez votre tout premier défi d’endurance, notre priorité est votre
+                            motivation à
+                            progresser et à apprendre.
+                        </p>
+                    </div>
+                </div>
+                <div x-data="{ open: false }" class="border-b pb-2">
+                    <button @click="open = !open"
+                        class="w-full text-left flex justify-between items-center font-medium py-2 focus:outline-none">
+                        Puis-je changer de formule par la suite ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                    </button>
+                    <div x-show="open" class="mt-2" x-transition>
+                        <p class="text-justify">
+                            Oui, tout à fait&nbsp;! Si tu as opté pour le <span class="font-semibold">Plan
+                                mensuel</span>,
+                            tu peux passer à tout moment vers la formule <span class="font-semibold">Endurance</span> ou
+                            <span class="font-semibold">Performance</span> en écrivant soit par e-mail à <a
+                                href="mailto:contact@atelier-endurance.ch"
+                                class="text-blue-600 font-medium">contact@atelier-endurance.ch</a>, soit directement
+                            à
+                            David
+                            sur WhatsApp.
+                            Si tu es déjà engagé sur une formule <span class="font-semibold">Endurance</span>
+                            ou <span class="font-semibold">Performance</span>, tu pourras changer de formule une
+                            fois la
+                            période d’engagement terminée.
+                            Tu peux également décider d’arrêter ton abonnement à la fin de ton mois en cours, selon
+                            les
+                            conditions de ta formule.
+                        </p>
 
-<!-- Comment ça marche -->
-<div class="py-8 lg:py-12 xl:py-16">
-    <div class="container px-8 mx-auto sm:px-16">
-        <h2 class="text-4xl font-extrabold  tracking-tight sm:text-5xl xl:text-6xl text-left italic">
-            <span class="text-blue-600">Comment</span>
-            <span> ça marche ?</span>
-        </h2>
-        <div class="max-w-sm sm:max-w-md lg:max-w-xl xl:max-w-3xl space-y-3">
-            <p class="mt-10 font-semibold">1. Choisis la formule d'accompagnement qui te convient.
-            </p>
-            <p class="font-semibold">2. Remplis le formulaire de demande de coaching en renseignant
-                le maximum d’informations possible.</p>
-            <p class="font-semibold">3. Tu recevras un message sur WhatsApp de la part de David dans
-                les 24/48h pour te proposer un appel d'évaluation.</p>
-            <p class="font-semibold">4. Lors de l'appel d'évaluation, tu précises tes objectifs et
-                répond au question du coach.</p>
-            <p class="font-semibold">5. Tu reçois ton plan d'entraînement directement dans
-                Intervals.icu</p>
-            <p class="font-semibold">6. Ton plan est continuellement mis à jour par ton coach.</p>
-            <p class="font-semibold">7. Vous faites le point sur ton entraînement lors de ton appel
-                mensuel ou hebdomadaire.</p>
-            <p class="font-semibold">8. On s'assure que ton entraînement va dans la bonne direction
-                !</p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ -->
-<div class="pb-8 lg:pb-12 xl:pb-16">
-    <div class="container px-8 mx-auto sm:px-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">FAQ</h2>
-        <div class="space-y-4">
-            <div x-data="{ open: false }" class="border-b pb-2">
-                <button @click="open = !open"
-                    class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
-                    Que puis-je attendre d'un coaching personnalisé ?
-                    <span x-text="open ? '➖' : '➕'"></span>
-                </button>
-                <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl" x-transition>
-                    <ul class="px-4 list-disc list-inside">
-                        <li class="mb-1">Une augmentation de tes performances.</li>
-                        <li class="mb-1">Une diminution significative du risque de blessure.</li>
-                        <li class="mb-1">Une gestion optimisée de tes pics de forme pour exceller au bon moment.</li>
-                        <li class="mb-1">Un allègement mental en confiant ton entraînement à un expert.</li>
-                        <li class="mb-1">Un plan 100 % personnalisé, adapté à ton profil de coureur et à tes
-                            contraintes.</li>
-                        <li class="mb-1">Un coach engagé dans ta progression, te guidant sur quoi faire et éviter.</li>
-                        <li class="mb-1">Un accompagnement sur mesure, tenant compte de ton âge, de ton expérience et de
-                            tes objectifs.</li>
-                        <li class="mb-1">Un coach passionné, partageant tes réussites et tes défis.</li>
-                        <li class="mb-1">Un soutien stratégique pour choisir tes courses et planifier efficacement tes
-                            saisons.</li>
-                    </ul>
+                    </div>
                 </div>
-            </div>
-            <div x-data="{ open: false }" class="border-b pb-2">
-                <button @click="open = !open"
-                    class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
-                    Quelle est la durée d'engagement ?
-                    <span x-text="open ? '➖' : '➕'"></span>
-                </button>
-                <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
-                    x-transition>
-                    <p class="text-justify">
-                        Nos formules <span class="font-semibold">Endurance</span> et <span
-                            class="font-semibold">Performance</span> sont proposées avec un engagement minimum de 3
-                        mois.
-                        Pour plus de flexibilité, le <span class="font-semibold">Plan mensuel</span> est disponible
-                        <span class="font-semibold">sans engagement</span>,
-                        vous permettant de tester le coaching pendant un mois et d’arrêter librement si cela ne vous
-                        convient pas.
-                    </p>
-                </div>
-            </div>
-            <div x-data="{ open: false }" class="border-b pb-2">
-                <button @click="open = !open"
-                    class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
-                    Y'a t'il un niveau requis ?
-                    <span x-text="open ? '➖' : '➕'"></span>
-                </button>
-                <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
-                    x-transition>
-                    <p class="text-justify">
-                        Pas du tout ! Quel que soit votre niveau, nous vous accompagnons avec la même attention.
-                        Que vous pratiquiez le cyclisme, la course sur route, le trail ou le triathlon, que vous visiez
-                        un semi-marathon en moins d’1h30
-                        ou que vous releviez votre tout premier défi d’endurance, notre priorité est votre motivation à
-                        progresser et à apprendre.
-                    </p>
-                </div>
-            </div>
-            <div x-data="{ open: false }" class="border-b pb-2">
-                <button @click="open = !open"
-                    class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
-                    Puis-je changer de formule par la suite ?
-                    <span x-text="open ? '➖' : '➕'"></span>
-                </button>
-                <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
-                    x-transition>
-                    <p class="text-justify">
-                        Oui, tout à fait&nbsp;! Si tu as opté pour le <span class="font-semibold">Plan mensuel</span>,
-                        tu peux passer à tout moment vers la formule <span class="font-semibold">Endurance</span> ou
-                        <span class="font-semibold">Performance</span> en écrivant soit par e-mail à <a
-                            href="mailto:contact@atelier-endurance.ch"
-                            class="text-blue-600 font-medium">contact@atelier-endurance.ch</a>, soit directement à David
-                        sur WhatsApp.
-                        Si tu es déjà engagé sur une formule <span class="font-semibold">Endurance</span>
-                        ou <span class="font-semibold">Performance</span>, tu pourras changer de formule une fois la
-                        période d’engagement terminée.
-                        Tu peux également décider d’arrêter ton abonnement à la fin de ton mois en cours, selon les
-                        conditions de ta formule.
-                    </p>
-
-                </div>
-            </div>
-            <div x-data="{ open: false }" class="border-b pb-2">
-                <button @click="open = !open"
-                    class="w-full text-left flex justify-between items-center font-medium text-gray-800 py-2 focus:outline-none">
-                    Puis-je me faire suivre en triathlon ?
-                    <span x-text="open ? '➖' : '➕'"></span>
-                </button>
-                <div x-show="open" class="text-gray-600 mt-2 max-w-md md:max-w-xl lg:max-w-5xl xl:max-w-7xl"
-                    x-transition>
-                    David est spécialisé en trail mais il s’occupe également de la partie triathlon. Comptez 20.- CHF de
-                    plus par mois pour un suivi triathlon.
+                <div x-data="{ open: false }" class="border-b pb-2">
+                    <button @click="open = !open"
+                        class="w-full text-left flex justify-between items-center font-medium py-2 focus:outline-none">
+                        Puis-je me faire suivre en triathlon ?
+                        <span x-text="open ? '➖' : '➕'"></span>
+                    </button>
+                    <div x-show="open" class="mt-2" x-transition>
+                        David est spécialisé en trail mais il s’occupe également de la partie triathlon. Comptez
+                        20.-
+                        CHF de
+                        plus par mois pour un suivi triathlon.
+                    </div>
                 </div>
             </div>
         </div>
