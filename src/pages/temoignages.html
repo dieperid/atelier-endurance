@@ -3,93 +3,68 @@ layout: default
 nav_active: temoignages
 ---
 
-<div class="container mx-auto px-10 lg:px-16 py-4">
-    <p
-        class="text-center relative flex w-full text-md sm:text-lg font-bold tracking-wider text-blue-600 uppercase justify-center">
-        Ne nous croyez pas sur parole
-    </p>
-    <div class="sm:px-12 flex flex-col w-full justify-center md:px-0">
-        <h2 class="relative flex items-start mt-2 text-3xl md:text-5xl font-bold justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                class="absolute right-16 hidden w-12 h-12 -mt-2 -mr-16 text-gray-500 lg:inline-block"
-                viewBox="0 0 975.036 975.036">
-                <path
-                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-            </svg>
-            Témoignages
-        </h2>
-        <div class="px-8 h-0.5 mt-4 md:mt-6 bg-gray-500 rounded-full"></div>
-    </div>
-    <div class="flex flex-col justify-center md:flex-row gap-4 mt-8 md:mt-12">
-        <div
-            class="mx-auto bg-white max-w-xs md:min-w-xs lg:max-w-md border md:mx-0 border-gray-300 rounded-lg shadow-md">
-            <img class="w-full h-96 object-cover object-top rounded-t-lg"
-                src="{{'/assets/img/Sacha.jpeg' | relative_url }}" alt="Sacha" />
-            <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Sacha Christen</h5>
-                <div x-data="{ expanded: false }" class="relative">
-                    <div class="text-sm md:text-base text-gray-700 lg:text-justify"
-                        :class="expanded ? '' : 'line-clamp-7'">
-                        <p>
-                            Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me
-                            permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et
-                            de
-                            ses conseils techniques, c'est son soutien et sa disponibilité qui font toute la
-                            différence.
-                        </p>
-                        <p>
-                            Ses séances sont à la fois exigeantes et plaisantes, de plus, il reste toujours à
-                            mon
-                            écoute pour que le plaisir soit toujours présent !
-                        </p>
-                    </div>
-                    <button @click="expanded = !expanded" class="text-blue-500 mt-2">
-                        <span x-show="!expanded">Voir plus</span>
-                        <span x-show="expanded">Voir moins</span>
-                    </button>
-                </div>
+
+<div class="container mx-auto py-4 px-8 sm:px-16">
+    <div class="mx-auto max-w-6xl">
+        <div class="flex flex-col justify-center space-y-4 md:space-y-8 mb-4 md:mb-8">
+            <h1 class="italic text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl">
+                Témoignages
+            </h1>
+            <div class="text-justify">
+                <p class="md:text-lg lg:text-xl">
+                    Chez l'<span class="font-semibold">Atelier de l’Endurance</span>, chaque parcours est unique, et
+                    chaque progrès est une victoire. Derrière chaque plan d’entraînement personnalisé, il y a une
+                    histoire, des défis relevés, des objectifs atteints — et parfois même dépassés.
+                    <br>
+                    Découvre les témoignages des athlètes que nous accompagnons : <em>débutants motivés, passionnés de
+                        trail, cyclistes assidus ou triathlètes ambitieux</em>. Ils partagent ici leur expérience, leur
+                    évolution et ce que le coaching leur a apporté, tant sur le plan sportif que personnel. Des récits
+                    inspirants qui illustrent notre engagement à vos côtés, à chaque étape de votre progression.
+                </p>
             </div>
+
         </div>
-        <div
-            class="mx-auto bg-white max-w-xs md:min-w-xs lg:max-w-md md:mx-0 border border-gray-300 rounded-lg shadow-md">
-            <img class="w-full h-96 object-cover rounded-t-lg" src="{{ '/assets/img/Jeremie.jpeg' | relative_url }}"
-                alt="Jérémie" />
-            <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Jérémie Boillat</h5>
-                <div x-data="{ expanded: false }" class="relative">
-                    <div class="text-sm md:text-base text-gray-700 lg:text-justify"
-                        :class="expanded ? '' : 'line-clamp-7'">
-                        <p>
-                            Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement
-                            suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et
-                            j’avais tendance à me décourager facilement, faute de discipline et de cadre. Puis,
-                            j’ai
-                            découvert l’Atelier de l’Endurance et j’ai vu en cette initiative une belle
-                            opportunité
-                            pour m’engager plus sérieusement dans ma pratique, d’autant plus que je connaissais
-                            déjà
-                            David, ce qui m’a tout de suite mis en confiance.
-                        </p>
-                        <br>
-                        <p>
-                            Depuis que j’ai intégré l’atelier il y a quelques semaines, j’ai ressenti un
-                            véritable
-                            changement : je suis plus discipliné, plus régulier et surtout plus motivé que
-                            jamais.
-                            Même s’il est encore trop tôt pour observer des résultats flagrants sur mes
-                            performances, je sens déjà une nette amélioration dans mon état d’esprit et ma
-                            rigueur.
-                            Je suis convaincu que cette dynamique positive me permettra d’atteindre de nouveaux
-                            objectifs avec confiance et détermination.
-                        </p>
+        <!-- Content -->
+        <div class="space-y-2">
+            <p
+                class="text-center relative flex w-full text-md md:text-lg font-bold tracking-wider text-blue-600 uppercase justify-center">
+                Ne nous croyez pas sur parole
+            </p>
+            <div class="px-8 h-0.5 bg-gray-500 rounded-full"></div>
+        </div>
+
+        <!-- Swiper carousel -->
+        <div class="swiper centered-slide-carousel swiper-container relative mt-8">
+            <div class="swiper-wrapper flex mb-12">
+                {% for testimonial in site.data.testimonials %}
+                <div class="swiper-slide">
+                    <div
+                        class="mx-auto bg-white max-w-xs md:min-w-xs lg:max-w-md md:mx-0 border border-gray-300 rounded-lg shadow-md flex flex-col justify-center">
+                        <img class="w-full h-96 object-cover object-top rounded-t-lg"
+                            src="{{ testimonial.image | relative_url }}" alt="{{ testimonial.name }}" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                                {{ testimonial.name }}
+                            </h5>
+                            <div x-data="{ expanded: false }" class="relative">
+                                <div class="text-sm md:text-base text-gray-700 lg:text-justify"
+                                    :class="expanded ? '' : 'line-clamp-7'">
+                                    {% for paragraph in testimonial.content %}
+                                    <p>{{ paragraph }}</p>
+                                    {% unless forloop.last %}<br>{% endunless %}
+                                    {% endfor %}
+                                </div>
+                                <button @click="expanded = !expanded" class="text-blue-500 mt-2">
+                                    <span x-show="!expanded">Voir plus</span>
+                                    <span x-show="expanded">Voir moins</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <button @click="expanded = !expanded" class="text-blue-500 mt-2">
-                        <span x-show="!expanded">Voir plus</span>
-                        <span x-show="expanded">Voir moins</span>
-                    </button>
                 </div>
+                {% endfor %}
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
