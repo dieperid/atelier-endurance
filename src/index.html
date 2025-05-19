@@ -22,38 +22,40 @@ nav_active: index
 
 <div class="px-2 py-12 lg:pt-20 bg-white md:px-0">
     <div class="items-center max-w-7xl px-8 mx-auto xl:px-5">
-        <div class="flex flex-col-reverse lg:flex-row flex-wrap items-center sm:-mx-3">
-            <div class="w-full lg:w-1/2 md:px-5 max-w-2xl">
-                <div class="mx-auto w-full pb-6 space-y-2 lg:space-y-4 xl:space-y-6 md:pr-0 md:pb-0 justify-center">
-                    <h1
-                        class="text-4xl font-extrabold tracking-tight text-zinc-900 xl:text-6xl text-center md:text-left">
+        <div class="flex flex-col-reverse lg:flex-row flex-wrap justify-between items-center sm:-mx-3">
+            <div class="w-full lg:w-1/2 lg:px-5 max-w-xl lg:max-w-none">
+                <div class="mx-auto w-full pb-6 space-y-2 md:space-y-4 xl:space-y-6 md:pr-0 md:pb-0 justify-center">
+                    <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl xl:text-6xl md:text-left max-w-lg">
                         <span class>Qui sommes</span>
                         <span class="text-blue-600">nous ?</span>
                     </h1>
                     <div class="flex flex-col space-y-2 lg:space-y-4 xl:space-y-6 text-justify">
-                        <p class="text-sm md:text-base md:max-w-3xl">
-                            Nous sommes David et Anthony, deux frères passionnés des sports d'endurance.
-                        </p>
-                        <p class="text-sm md:text-base md:max-w-3xl">
-                            L’un évolue en cyclisme de haut niveau, tandis que l’autre se distingue en trail au
-                            niveau amateur/élite. Notre parcours sportif nous a naturellement conduits à nous
-                            intéresser en profondeur à l’entraînement et à la physiologie de l’effort.
-                        </p>
-                        <p class="text-sm md:text-base md:max-w-3xl">
-                            Nous avons créé l'<b>Atelier de l’Endurance</b> avec l’envie de partager notre
-                            expérience et d’accompagner tous les passionnés de sport d’endurance, qu’ils soient
-                            débutants ou confirmés. Notre objectif est d’aider chacun à progresser, à se dépasser et à
-                            prendre du plaisir dans sa pratique, en proposant un accompagnement adapté à tous les
-                            niveaux et toutes les ambitions.
-                        </p>
-                        <p class="flex justify-end text-base text-gray-500 text-sm md:text-base md:max-w-3xl">
+                        <div class="text-sm md:text-base xl:text-lg space-y-2 md:space-y-4 xl:space-y-6">
+                            <p>
+                                Nous sommes David et Anthony, deux frères passionnés des sports d'endurance.
+                            </p>
+                            <p>
+                                L’un évolue en cyclisme de haut niveau, tandis que l’autre se distingue en trail au
+                                niveau amateur/élite. Notre parcours sportif nous a naturellement conduits à nous
+                                intéresser en profondeur à l’entraînement et à la physiologie de l’effort.
+                            </p>
+                            <p>
+                                Nous avons créé l'<span class="font-bold">Atelier de l’Endurance</span> avec l’envie de
+                                partager notre
+                                expérience et d’accompagner tous les passionnés de sport d’endurance, qu’ils soient
+                                débutants ou confirmés. Notre objectif est d’aider chacun à progresser, à se dépasser et
+                                à
+                                prendre du plaisir dans sa pratique, en proposant un accompagnement adapté à tous les
+                                niveaux et toutes les ambitions.
+                            </p>
+                        </div>
+                        <p class="flex justify-end text-base text-gray-500 text-sm md:text-base">
                             David et Anthony
                         </p>
                     </div>
                     <div class="relative flex flex-row sm:space-x-4">
                         <a href="{{ '/pages/coaching.html' | relative_url }}"
-                            class="flex border-2 border-blue-600 items-center px-4 py-3 text-md font-medium text-blue-600 bg-white rounded-full hover:bg-blue-600 hover:text-white w-auto sm:text-base"
-                            data-rounded="rounded-md">
+                            class="flex border-2 border-blue-600 items-center px-4 py-3 font-medium text-blue-600 bg-white rounded-full hover:bg-blue-600 hover:text-white w-auto text-sm md:text-base xl:text-lg">
                             En savoir plus
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -64,8 +66,8 @@ nav_active: index
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 mb-6 lg:mb-0 max-w-xl">
-                <div class="flex w-full h-full overflow-hidden justify-center sm:px-2 lg:px-8">
+            <div class="w-full lg:w-1/2 mb-6 lg:mb-0 max-w-xl lg:max-w-2xl">
+                <div class="flex w-full h-full overflow-hidden justify-center lg:px-2 lg:px-8">
                     <img src="{{'assets/img/AnthonyDavid.png' | relative_url}}" class="rounded-xl" />
                 </div>
             </div>
@@ -83,11 +85,11 @@ nav_active: index
 
 <div class="bg-gray-300 w-full pb-8">
     <div
-        class="box-border flex flex-col px-12 mx-auto justify-center mb-4 lg:mb-8 md:flex-row max-w-7xl lg:px-16 items-center lg:items-start">
+        class="box-border flex flex-col mx-auto justify-center mb-4 lg:mb-8 lg:flex-row max-w-7xl items-center px-8 xl:px-5">
         <!-- Image -->
         <div
-            class="box-border relative w-full max-w-md mt-5 mb-6 bg-no-repeat bg-contain md:mt-0 md:mb-0 md:w-1/2 order-first md:order-none">
-            <img src="{{'assets/img/David.jpg' | relative_url}}" class="mx-auto lg:size-96 md:mx-0 rounded-xl" />
+            class="box-border relative w-full max-w-xl mt-5 mb-6 bg-no-repeat bg-contain lg:mt-0 lg:mb-0 lg:w-1/2 order-first lg:order-none">
+            <img src="{{'assets/img/David.jpg' | relative_url}}" class="xl:max-w-lg rounded-xl" />
             <div class="pt-5 justify-start lg:w-96 space-y-2">
                 <span
                     class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium">
@@ -106,59 +108,62 @@ nav_active: index
             </div>
         </div>
         <!-- Content -->
-        <div class="box-border w-full text-justify max-w-md sm:max-w-none sm:w-md md:w-1/2 md:pl-10 lg:pl-0 space-y-4">
-            <h2 class="text-xl font-semibold leading-tight border-0 border-zinc-300 md:text-2xl lg:text-3xl">
+        <div class="box-border w-full text-justify max-w-xl lg:max-w-none lg:w-1/2 lg:pl-10 lg:pl-0 space-y-4">
+            <h2 class="text-2xl font-semibold leading-tight lg:text-4xl">
                 David Dieperink
             </h2>
-            <p class="text-sm lg:text-base">
-                Ancien fumeur et fêtard, j’ai pris un tournant décisif en 2021 en me reprenant en main, avec une
-                perte de poids comme premier objectif. Poussé par mon frère, j’ai tenté mon premier 10 km… et j'ai
-                détesté la course à pied ! C’est alors que je me suis tourné vers les sports de combat, que j’ai
-                pratiqués jusqu’en 2023.
-            </p>
-            <p class="text-sm lg:text-base">
-                Mais mon endurance restait un frein, et une nouvelle fois, mon frère m’a embarqué dans sa passion :
-                le vélo. De fil en aiguille, j’ai commencé à rouler, puis à courir, et sans même m’en rendre compte,
-                je me suis lancé des défis toujours plus grands et ambitieux : courir mon premier marathon, terminer
-                un trail de 70 km…
-            </p>
-            <p class="text-sm lg:text-base">
-                Aujourd’hui, je suis tombé amoureux des sports d’endurance. La physiologie et l’entraînement me
-                passionnent, et cette soif de progression m’a donné envie d’aider les autres à atteindre leurs
-                propres objectifs.
-            </p>
+            <div class="text-sm md:text-base xl:text-lg space-y-4">
+                <p>
+                    Ancien fumeur et fêtard, j’ai pris un tournant décisif en 2021 en me reprenant en main, avec une
+                    perte de poids comme premier objectif. Poussé par mon frère, j’ai tenté mon premier 10 km… et j'ai
+                    détesté la course à pied ! C’est alors que je me suis tourné vers les sports de combat, que j’ai
+                    pratiqués jusqu’en 2023.
+                </p>
+                <p>
+                    Mais mon endurance restait un frein, et une nouvelle fois, mon frère m’a embarqué dans sa passion :
+                    le vélo. De fil en aiguille, j’ai commencé à rouler, puis à courir, et sans même m’en rendre compte,
+                    je me suis lancé des défis toujours plus grands et ambitieux : courir mon premier marathon, terminer
+                    un trail de 70 km…
+                </p>
+                <p>
+                    Aujourd’hui, je suis tombé amoureux des sports d’endurance. La physiologie et l’entraînement me
+                    passionnent, et cette soif de progression m’a donné envie d’aider les autres à atteindre leurs
+                    propres objectifs.
+                </p>
+            </div>
         </div>
     </div>
-    <div
-        class="box-border flex flex-col px-12 mx-auto justify-center md:flex-row max-w-7xl lg:px-16 items-center lg:items-start">
+    <div class="box-border flex flex-col mx-auto justify-center lg:flex-row max-w-7xl items-center px-8 xl:px-5">
         <!-- Content -->
-        <div class="box-border w-full text-justify max-w-md sm:max-w-none sm:w-md md:w-1/2 md:pr-10 lg:pr-0 space-y-4">
-            <h2 class="text-xl font-semibold leading-tight border-0 border-zinc-300 lg:text-2xl md:text-2xl">
+        <div class="box-border w-full text-justify max-w-xl lg:max-w-none lg:w-1/2 lg:pr-10 lg:pr-0 space-y-4">
+            <h2 class="text-2xl font-semibold leading-tight lg:text-4xl">
                 Anthony Dieperink
             </h2>
-            <p class="text-sm lg:text-base">
-                Durant la période Covid, j’ai ressenti le besoin de me remettre en forme. Confiné et lassé de
-                l’inactivité, j’ai décidé de me lancer un défi : la course à pied. Mes premiers kilomètres ont été
-                laborieux, mais petit à petit, j’ai pris goût à l’effort et aux sensations qu’il procurait.
-            </p>
-            <p class="text-sm lg:text-base">
-                Après plusieurs mois de pratique, l’envie de diversifier mon entraînement s’est imposée. En 2022, je
-                suis monté sur un vélo, sans me douter que ce serait une révélation. D’abord par curiosité, puis par
-                passion, j’ai enchaîné les sorties, allongeant progressivement les distances. Chaque coup de pédale
-                était une nouvelle étape, un nouveau défi à relever.
-            </p>
-            <p class="text-sm lg:text-base">
-                Aujourd’hui, le sport est devenu bien plus qu’un simple passe-temps : c’est un mode de vie.
-                L’endurance, la progression, la découverte de mes propres limites me motivent au quotidien, et cette
-                passion ne cesse de grandir. Fort de cette expérience, j’ai désormais envie de partager ce chemin
-                avec d’autres, de les accompagner dans leur propre transformation et de les aider à atteindre leurs
-                objectifs, quels qu’ils soient.
-            </p>
+            <div class="text-sm md:text-base xl:text-lg space-y-4">
+                <p>
+                    Durant la période Covid, j’ai ressenti le besoin de me remettre en forme. Confiné et lassé de
+                    l’inactivité, j’ai décidé de me lancer un défi : la course à pied. Mes premiers kilomètres ont été
+                    laborieux, mais petit à petit, j’ai pris goût à l’effort et aux sensations qu’il procurait.
+                </p>
+                <p>
+                    Après plusieurs mois de pratique, l’envie de diversifier mon entraînement s’est imposée. En 2022, je
+                    suis monté sur un vélo, sans me douter que ce serait une révélation. D’abord par curiosité, puis par
+                    passion, j’ai enchaîné les sorties, allongeant progressivement les distances. Chaque coup de pédale
+                    était une nouvelle étape, un nouveau défi à relever.
+                </p>
+                <p>
+                    Aujourd’hui, le sport est devenu bien plus qu’un simple passe-temps : c’est un mode de vie.
+                    L’endurance, la progression, la découverte de mes propres limites me motivent au quotidien, et cette
+                    passion ne cesse de grandir. Fort de cette expérience, j’ai désormais envie de partager ce chemin
+                    avec d’autres, de les accompagner dans leur propre transformation et de les aider à atteindre leurs
+                    objectifs, quels qu’ils soient.
+                </p>
+            </div>
         </div>
         <!-- Image -->
         <div
-            class="grid box-border relative w-full max-w-md mt-5 mb-6 bg-no-repeat bg-contain rounded-lg md:ml-0 md:mt-0 md:mb-0 md:w-1/2 md:justify-end order-first md:order-none">
-            <img src="{{'assets/img/Anthony.jpeg' | relative_url}}" class="lg:size-96 rounded-xl justify-end" />
+            class="grid box-border relative w-full max-w-xl mt-5 mb-6 bg-no-repeat bg-contain rounded-lg lg:ml-0 lg:mt-0 lg:mb-0 lg:w-1/2 lg:justify-end order-first lg:order-none">
+            <img src="{{'assets/img/Anthony.jpeg' | relative_url}}" class="xl:max-w-lg rounded-xl justify-end" />
             <div class="pt-5 justify-end lg:w-96 space-y-2">
                 <span
                     class="inline-flex items-center bg-gray-200 px-3 py-1 rounded-full text-xs lg:text-sm font-medium">
