@@ -1,5 +1,5 @@
 - name: Sacha Christen
-  image: /assets/img/Sacha.jpeg
+  image: /assets/img/testimonials/Sacha.jpeg
   content:
     - "                                Ce qui fait la force de David, c'est sans aucun doute son suivi personnalisé qui me
                                 permet pas-à-pas de me rapprocher de mes objectifs. Au-delà de ses connaissances et
@@ -10,7 +10,7 @@
                                 mon
                                 écoute pour que le plaisir soit toujours présent !"
 - name: Jérémie Boillat
-  image: /assets/img/Jeremie.jpeg
+  image: /assets/img/testimonials/Jeremie.jpeg
   content:
     - "                                Cela fait environ cinq ans que je me suis mis au trail, mais sans jamais réellement
                                 suivre un plan d’entraînement structuré. Je progressais, certes, mais lentement, et
