@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         spaceBetween: 30,
         slidesPerView: 1,
-        slideToClickedSlide: true,
+        autoplay: {
+            delay: 5000,
+        },
         pagination: {
             el: ".centered-slide-carousel .swiper-pagination",
             clickable: true,
