@@ -2,7 +2,7 @@
     <nav class="w-full">
         <div class="container mx-auto px-4 sm:px-16 flex flex-wrap items-center justify-between">
             <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
-                <img src="{{ '/assets/img/logo_trans.png' | relative_url }}" class="h-28" alt="Logo" />
+                <img src="{{ site.data.assets.logo_trans | relative_url }}" class="h-28" alt="Logo" />
             </a>
             <div class="flex lg:order-2 space-x-3 lg:space-x-0">
                 <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank"
@@ -19,43 +19,24 @@
                     </svg>
                 </button>
             </div>
+
             <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
                 <ul
                     class="text-lg font-medium flex flex-col lg:flex-row mb-4 lg:mb-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 space-y-2 lg:space-y-0 lg:space-x-6">
+                    {% for link in site.data.nav_links %}
+                    {% assign nav_class = 'border-hover-black' %}
+                    {% if page.nav_active == link.slug %}
+                    {% assign nav_class = 'active border-hover-black' %}
+                    {% elsif page.nav_active == 'index' and link.slug != 'index' %}
+                    {% assign nav_class = 'text-white border-hover-white' %}
+                    {% endif %}
                     <li class="text-center">
-                        <a href="{{ '/' | relative_url }}" class="py-1 px-3 lg:px-0 lg:bg-transparent border-hover-transition
-                        {% if page.nav_active == 'index' %}
-                            active border-hover-white
-                        {% else %}
-                            text-black border-hover-black
-                        {% endif %}">
-                            Accueil
+                        <a href="{{ link.url | relative_url }}"
+                            class="py-1 px-3 lg:px-0 lg:bg-transparent border-hover-transition {{ nav_class }}">
+                            {{ link.label }}
                         </a>
                     </li>
-                    <li class="text-center">
-                        <a href="{{ '/pages/coaching.html' | relative_url }}" class="py-1 px-3 lg:px-0 border-hover-transition
-                        {% if page.nav_active == 'coaching' %}
-                            active border-hover-black
-                        {% elsif page.nav_active == 'index' %}
-                            text-white border-hover-white
-                        {% else %}
-                            border-hover-black
-                        {% endif %}">
-                            Coaching
-                        </a>
-                    </li>
-                    <li class="text-center">
-                        <a href="{{ '/pages/testimonials.html' | relative_url }}" class="py-1 px-3 lg:px-0 border-hover-transition
-                        {% if page.nav_active == 'testimonials' %}
-                            active border-hover-black
-                        {%elsif page.nav_active == 'index' %}
-                            text-white border-hover-white
-                        {% else %}
-                            border-hover-black
-                        {% endif %}">
-                            Témoignages
-                        </a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
