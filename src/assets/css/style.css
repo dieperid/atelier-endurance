@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=:wght@400..900&family=Zen+Dots&display=swap');
 
+:root {
+    --primary-color: #155dfc;
+}
+
 body {
     font-family: "Montserrat";
 }
@@ -31,16 +35,15 @@ body {
     transition: border-color 200ms ease;
 }
 
-/* Survol blanc (ex: sur index) */
 .border-hover-white:hover {
     border-color: white;
 }
 
-/* Survol noir (ex: sur autres pages) */
 .border-hover-black:hover {
-    border-color: black;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .active {
-    color: #155dfc;
+    color: var(--primary-color);
 }
