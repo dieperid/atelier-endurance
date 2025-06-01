@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=:wght@400..900&family=Zen+Dots&display=swap');
+
+:root {
+    --primary-color: #155dfc;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.hero-image {
+    background-image: url('../img/pages/home/Home.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    height: 100%;
+}
+
+.border-hover-transition {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: transparent;
+    transition: border-color 200ms ease;
+}
+
+.border-hover-white:hover {
+    border-color: white;
+}
+
+.border-hover-black:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.active {
+    color: var(--primary-color);
+}

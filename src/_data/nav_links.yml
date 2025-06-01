@@ -1,0 +1,11 @@
+- label: Accueil
+  url: /
+  slug: index
+
+- label: Coaching
+  url: /pages/coaching.html
+  slug: coaching
+
+- label: Témoignages
+  url: /pages/testimonials.html
+  slug: testimonials
