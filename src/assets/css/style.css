@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=:wght@400..900&family=Zen+Dots&display=swap');
-
 :root {
     --primary-color: #155dfc;
 }
 
 body {
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero-image {
