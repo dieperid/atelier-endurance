@@ -9,7 +9,7 @@ body {
 }
 
 .hero-image {
-    background-image: url('../img/pages/home/Home.jpg');
+    background-image: url('../img/pages/home/Home.jpeg');
     background-size: cover;
     position: absolute;
     top: 0;
