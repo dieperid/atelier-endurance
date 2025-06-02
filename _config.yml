@@ -1,5 +1,16 @@
-# Configuration du site Jekyll
 title: Atelier de l'Endurance
 description: "Site web de l'Atelier de l'Endurance"
 url: "https://www.atelier-endurance.ch/"
 source: src
+lang: fr
+author: "Atelier de l'Endurance"
+email: "contact@atelier-endurance.ch"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+social:
+  name: Atelier de l'Endurance
+  links:
+    - https://www.instagram.com/atelier_endurance/
