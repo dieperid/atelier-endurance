@@ -1,43 +1,49 @@
 <header class="{% if page.nav_active == 'index' %}absolute{% else %}relative{% endif %} top-0 left-0 w-full z-30">
-    <nav class="w-full">
-        <div class="container mx-auto px-4 sm:px-16 flex flex-wrap items-center justify-between">
-            <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
-                <img src="{{ site.data.assets.logo_trans | relative_url }}" class="h-28" alt="Logo" />
-            </a>
-            <div class="flex lg:order-2 space-x-3 lg:space-x-0">
-                <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center lg:text-lg">
-                    Nous contacter
+    <nav class="w-full" x-data="{ menuOpen: false }" :class="{ 'bg-white': menuOpen }">
+        <div>
+            <div class="container mx-auto px-4 sm:px-16 flex flex-wrap items-center justify-between">
+                <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
+                    <img src="{{ site.data.assets.logo_trans | relative_url }}" class="h-28" alt="Logo" />
                 </a>
-                <button aria-label="Ouvrir menu" data-collapse-toggle="navbar-sticky" type="button"
-                    class="{% if page.nav_active == 'index' %}text-white{% else %}text-black{% endif %}
-                    inline-flex items-center p-2 w-10 h-10 justify-center text-md rounded-lg lg:hidden hover:bg-gray-100" aria-controls="navbar-sticky" aria-expanded="false">
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
-                <ul
-                    class="text-lg font-medium flex flex-col lg:flex-row mb-4 lg:mb-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 space-y-2 lg:space-y-0 lg:space-x-6">
-                    {% for link in site.data.nav_links %}
-                    {% assign nav_class = 'border-hover-black' %}
-                    {% if page.nav_active == link.slug %}
-                    {% assign nav_class = 'active border-hover-black' %}
-                    {% elsif page.nav_active == 'index' and link.slug != 'index' %}
-                    {% assign nav_class = 'text-white border-hover-white' %}
-                    {% endif %}
-                    <li class="text-center">
-                        <a href="{{ link.url | relative_url }}"
-                            class="py-1 px-3 lg:px-0 lg:bg-transparent border-hover-transition {{ nav_class }}">
-                            {{ link.label }}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
+                <div class="flex lg:order-2 space-x-3 lg:space-x-0">
+                    <a href="https://forms.gle/gVNSToD87qrQ41wr6" target="_blank"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center lg:text-lg">
+                        Nous contacter
+                    </a>
+                    <button @click="menuOpen = !menuOpen" aria-label="Ouvrir menu" data-collapse-toggle="navbar-sticky"
+                        type="button"
+                        class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-md rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
+                        aria-controls="navbar-sticky" aria-expanded="false" title="Menu">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden absolute top-[7rem] left-0 right-0 w-full z-50 bg-white lg:top-0 lg:z-auto lg:flex lg:w-auto lg:order-1 lg:relative px-4 pb-4 lg:px-0 lg:pb-0"
+                    id="navbar-sticky">
+                    <ul
+                        class="text-lg font-medium flex flex-col lg:flex-row lg:mb-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:space-x-6 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:bg-transparent lg:border-0 p-4 lg:p-0">
+                        {% for link in site.data.nav_links %}
+                        {% assign nav_class = 'hover:bg-gray-200 lg:hover:bg-transparent rounded-sm hover:text-blue-600'
+                        %}
+                        {% if page.nav_active == link.slug %}
+                        {% assign nav_class = 'text-white bg-blue-700 rounded-sm lg:bg-transparent lg:text-blue-600' %}
+                        {% elsif page.nav_active == 'index' && link.slug != 'index' %}
+                        {% assign nav_class = 'lg:text-white hover:bg-gray-200 lg:hover:bg-transparent rounded-sm
+                        hover:text-blue-600' %}
+                        {% endif %}
+                        <li>
+                            <a href="{{ link.url | relative_url }}"
+                                class="block py-2 px-3 lg:px-0 lg:bg-transparent border-hover-transition {{ nav_class }}">
+                                {{ link.label }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
