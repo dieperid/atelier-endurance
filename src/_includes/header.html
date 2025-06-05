@@ -1,5 +1,6 @@
 <header class="{% if page.nav_active == 'index' %}absolute{% else %}relative{% endif %} top-0 left-0 w-full z-30">
-    <nav class="w-full" x-data="{ menuOpen: false }" :class="{ 'bg-white': menuOpen }">
+    <nav class="w-full" x-data="{ menuOpen: false }"
+        x-effect="document.body.classList.toggle('overflow-hidden', menuOpen)" :class="{ 'bg-white': menuOpen }">
         <div>
             <div class="container mx-auto px-4 sm:px-16 flex flex-wrap items-center justify-between">
                 <a href="{{ '/' | relative_url }}" class="flex items-center space-x-3">
@@ -15,17 +16,23 @@
                         class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-md rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 hover:bg-gray-100"
                         aria-controls="navbar-sticky" aria-expanded="false" title="Menu">
                         <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
+                        <!-- Icône burger -->
+                        <svg x-show="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+                            viewBox="0 0 17 14" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+
+                        <!-- Icône X (fermer) -->
+                        <svg x-show="menuOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
-                <div class="hidden absolute top-[7rem] left-0 right-0 w-full z-50 bg-white lg:top-0 lg:z-auto lg:flex lg:w-auto lg:order-1 lg:relative px-4 pb-4 lg:px-0 lg:pb-0"
+                <div class="hidden absolute top-[7rem] left-0 right-0 w-full z-50 bg-white h-screen lg:h-auto lg:top-0 lg:z-auto lg:flex lg:w-auto lg:order-1 lg:relative px-4 pb-4 lg:px-0 lg:pb-0"
                     id="navbar-sticky">
                     <ul
-                        class="lg:text-lg xl:text-xl font-medium flex flex-col lg:flex-row lg:mb-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:space-x-6 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:bg-transparent lg:border-0 p-4 lg:p-0">
+                        class="font-medium flex flex-col border border-gray-100 rounded-lg bg-gray-50 p-4 lg:bg-transparent lg:border-0 lg:p-0 lg:flex-row lg:text-lg xl:text-xl lg:mb-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:space-x-6">
                         {% for link in site.data.nav_links %}
                         {% assign nav_class = 'hover:bg-gray-200 lg:hover:bg-transparent rounded-sm hover:text-blue-600'
                         %}
