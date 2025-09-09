@@ -1,6 +1,7 @@
 title: Atelier de l'Endurance
 description: "Site web de l'Atelier de l'Endurance"
 url: "https://www.atelier-endurance.ch"
+baseurl: ""
 source: src
 lang: fr
 author: "Atelier de l'Endurance"
