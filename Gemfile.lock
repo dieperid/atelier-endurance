@@ -81,7 +81,7 @@ DEPENDENCIES
   jekyll
   jekyll-seo-tag
   jekyll-sitemap
-  sass-embedded
+  sass-embedded (~> 1.88)
 
 BUNDLED WITH
    2.3.7
